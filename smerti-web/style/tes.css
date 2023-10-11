@@ -1,0 +1,87 @@
+/*====================*/
+/* HEADER */
+/*====================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "rubik"; */
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+}
+
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  height: 6.4rem;
+  padding: 0 6.4rem;
+  position: relative;
+  background-color: #fff;
+}
+
+.logo {
+  height: 4.8rem;
+  gap: 4.8rem;
+  display: block;
+  margin: 2.4rem 3.2rem;
+}
+
+.heading-first {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+/* NAVIGATION */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #1a1aff;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #1e1e68;
+}
+
+/*====================*/
+/* HERO */
+/*====================*/
+
+.section-hero {
+  /* background-color: #fdf2e9; */
+  background-color: #fff;
+  padding: 4.8rem 0 0 9.6rem;
+}
+
+.hero {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
