@@ -46,56 +46,105 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#">Beranda</a></li>
           <li><a class="main-nav-link" href="#">Profil</a></li>
           <li><a class="main-nav-link" href="#">Pengumuman</a></li>
           <li><a class="main-nav-link" href="#">Fitur</a></li>
+          <li>
+            <a class="main-nav-link main-nav-tuition" href="#">Pendaftaran</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <section class="section-hero">
+      <!-- <img
+          alt="Kegiatan upacara di SMERTI"
+          class="hero-img"
+          src="img/siswa.jpeg"
+        /> -->
+
       <div class="hero">
         <div class="hero-text-box">
-          <h1 class="heading-first">
-            Pendidikan tanpa batas untuk semua orang
-          </h1>
+          <h1 class="heading-first">Kami percaya</h1>
           <p class="hero-description">
-            Kami peduli bahwa setiap orang berhak mendapatkan pendidikan yang
-            layak, pendidikan adalah cara untuk menggerakkan dunia.
+            Setiap anak memiliki potensial. Kami mendukung setiap anak dalam
+            mengembangkan pengetahuan, tidak lupa untuk selalu bertakwa dan
+            peduli dengan sesamnya.
           </p>
+
+          <a href="#" class="btn">Lebih lanjut &darr;</a>
         </div>
 
-        <div>
-          <img
-            alt="Patung dewi Saraswati di SMAN 1 Baturiti"
-            src="img/dewi saraswati crop.jpg"
-            class="hero-img"
-          />
-        </div>
+        <div
+          role="img"
+          aria-label="Kegiatan uparaca di SMERTI"
+          class="hero-img"
+        ></div>
       </div>
+      <!-- nnti cek lagi ya -->
     </section>
 
     <section class="section-profile">
       <div class="profile">
-        <h2 class="heading-second">Profil Sekolah</h2>
-      </div>
+        <div class="profile-heading">
+          <h2 class="heading-second">Profil Sekolah</h2>
+        </div>
 
-      <div class="container">
-        <h3 class="heading-third">Alamat sekolah</h3>
-        <!-- foto sekolah -->
-        <p class="profil-description">
-          SMA Negeri 1 Baturiti atau sering kami sebut dengan SMERTI berlokasi
-          di desa Perean, Kecamatan Baturiti, Kabupaten Tabanan, Provinsi Bali.
-        </p>
+        <div class="container grid grid--2-cols">
+          <div class="profile-warp">
+            <ion-icon name="location-outline" class="profile-icon"></ion-icon>
+            <h3 class="heading-third">Alamat sekolah</h3>
+            <!-- foto sekolah -->
+            <p class="profil-description">
+              SMA Negeri 1 Baturiti atau sering kami sebut dengan SMERTI
+              berlokasi di desa Perean, Kecamatan Baturiti, Kabupaten Tabanan,
+              Provinsi Bali.
+            </p>
+          </div>
 
-        <h3 class="heading-third">Kepala Sekolah</h3>
-        <!-- foto kepala sekolah -->
-        <p class="profil-description">
-          Kepala sekolah SMA Negeri 1 Baturiti bernama pak Drs. I Wayan Wardana
-          Yasa.,M.Pd. Beliau lahir di Kuwum, tanggl 27 Juli tahun 1967. Beliau
-          menjabat menjadi kepala sekolah pada tahun ajaran 2022 lalu.
-        </p>
+          <div class="profile-warp">
+            <ion-icon name="ribbon-outline" class="profile-icon"></ion-icon>
+            <h3 class="heading-third">Akreditasi</h3>
+            <!-- foto kepala sekolah -->
+            <p class="profil-description">
+              Lorem ipsum dolor sit amet A elit. Error Deserunt recusandae
+              corporis laborum voluptatum consequatur neque mollitia, dolor
+              nostrum eius eum voluptatibus.
+            </p>
+          </div>
+        </div>
+        <div class="profile-count">
+          <div class="container grid grid--3-cols">
+            <div>
+              <!-- icon untuk jumlah persons -->
+              <h2 class="heading-second">47</h2>
+              <ion-icon
+                name="person-outline"
+                class="profile-icon profile-icon-sm"
+              ></ion-icon>
+              <h3 class="heading-third">Pengajar</h3>
+            </div>
+
+            <div>
+              <h2 class="heading-second">659</h2>
+              <ion-icon
+                name="school-outline"
+                class="profile-icon profile-icon-sm"
+              ></ion-icon>
+              <h3 class="heading-third">Total siswa</h3>
+            </div>
+
+            <div>
+              <h2 class="heading-second">18</h2>
+              <ion-icon
+                name="square-outline"
+                class="profile-icon profile-icon-sm"
+              ></ion-icon>
+              <h3 class="heading-third">Ruang kelas</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
