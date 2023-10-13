@@ -48,10 +48,10 @@
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Beranda</a></li>
           <li><a class="main-nav-link" href="#">Profil</a></li>
-          <li><a class="main-nav-link" href="#">Pengumuman</a></li>
-          <li><a class="main-nav-link" href="#">Fitur</a></li>
+          <li><a class="main-nav-link" href="#">Kegiatan</a></li>
+          <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
           <li>
-            <a class="main-nav-link main-nav-tuition" href="#">Pendaftaran</a>
+            <a class="main-nav-link main-nav-tuition" href="#">Kontak</a>
           </li>
         </ul>
       </nav>
@@ -70,7 +70,7 @@
           <p class="hero-description">
             Setiap anak memiliki potensial. Kami mendukung setiap anak dalam
             mengembangkan pengetahuan, tidak lupa untuk selalu bertakwa dan
-            peduli dengan sesamnya.
+            peduli akan sekitarnya.
           </p>
 
           <a href="#" class="btn">Lebih lanjut &darr;</a>
@@ -94,7 +94,7 @@
         <div class="container grid grid--2-cols">
           <div class="profile-warp">
             <ion-icon name="location-outline" class="profile-icon"></ion-icon>
-            <h3 class="heading-third">Alamat sekolah</h3>
+            <h3 class="heading-third heading-third-profile">Alamat sekolah</h3>
             <!-- foto sekolah -->
             <p class="profil-description">
               SMA Negeri 1 Baturiti atau sering kami sebut dengan SMERTI
@@ -105,7 +105,7 @@
 
           <div class="profile-warp">
             <ion-icon name="ribbon-outline" class="profile-icon"></ion-icon>
-            <h3 class="heading-third">Akreditasi</h3>
+            <h3 class="heading-third heading-third-profile">Akreditasi</h3>
             <!-- foto kepala sekolah -->
             <p class="profil-description">
               Lorem ipsum dolor sit amet A elit. Error Deserunt recusandae
@@ -115,37 +115,111 @@
           </div>
         </div>
         <div class="profile-count">
-          <div class="container grid grid--3-cols">
+          <div class="container grid grid--3-cols margin-right-sm">
             <div>
               <!-- icon untuk jumlah persons -->
-              <h2 class="heading-second">47</h2>
+              <h2 class="heading-second heading-second-num">47</h2>
               <ion-icon
                 name="person-outline"
                 class="profile-icon profile-icon-sm"
               ></ion-icon>
-              <h3 class="heading-third">Pengajar</h3>
+              <h3 class="heading-third heading-third-name">Pengajar</h3>
             </div>
 
             <div>
-              <h2 class="heading-second">659</h2>
+              <h2 class="heading-second heading-second-num">659</h2>
               <ion-icon
                 name="school-outline"
                 class="profile-icon profile-icon-sm"
               ></ion-icon>
-              <h3 class="heading-third">Total siswa</h3>
+              <h3 class="heading-third heading-third-name">Total siswa</h3>
             </div>
 
             <div>
-              <h2 class="heading-second">18</h2>
+              <h2 class="heading-second heading-second-num">18</h2>
               <ion-icon
                 name="square-outline"
                 class="profile-icon profile-icon-sm"
               ></ion-icon>
-              <h3 class="heading-third">Ruang kelas</h3>
+              <h3 class="heading-third heading-third-name">Ruang kelas</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="section-activities">
+      <div class="activities-heading">
+        <h2 class="heading-second">Kegiatan sekolah</h2>
+      </div>
+
+      <div class="activities">
+        <div class="container grid grid--4-cols">
+          <!-- <button class="btn btn-round">
+            <ion-icon
+              name="chevron-back-outline"
+              class="btn btn-carousel"
+            ></ion-icon>
+          </button> -->
+          <!-- Kegiatan belajar mengajar di kelas -->
+          <div class="activity-content">
+            <img
+              src="img/belajar.jpg"
+              alt="Kegiatan belajar mengajar di kelas"
+              class="activity-img activity-img-sm"
+            />
+
+            <p class="activity-description">
+              Suasana kegiatan belajar mengajar di kelas.
+            </p>
+          </div>
+
+          <div class="activity-content">
+            <!-- Kegiatan persembahyangan -->
+            <img
+              src="img/sembahyang.jpg"
+              alt="Siswa mengikuti kegiatan persembahyangan"
+              class="activity-img"
+            />
+
+            <p class="activity-description">
+              Persembahyangan bagi siswa beragama Hindu.
+            </p>
+          </div>
+
+          <div class="activity-content">
+            <img
+              src="img/bersihan.jpg"
+              alt="Siswa melakukan kegiatan pembersihan di sekitar area sekolah"
+              class="activity-img"
+            />
+
+            <p class="activity-description">
+              Kegiatan bersih-bersih di area sekolah.
+            </p>
+          </div>
+
+          <div class="activity-content">
+            <img
+              src="img/lomba.jpg"
+              alt="Siswa dan siswi SMERTI mengikuti acara lomba menyanyi untuk Bulan Bahasa Bali"
+              class="activity-img"
+            />
+
+            <p class="activity-description">
+              Kegiatan lomba untuk Bulan Bahasa Bali.
+            </p>
+          </div>
+          <!-- <button class="btn btn-round">
+            <ion-icon
+              name="chevron-forward-outline"
+              class="btn btn-carousel"
+            ></ion-icon>
+          </button> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section-latest-news"></section>
   </body>
 </html>
