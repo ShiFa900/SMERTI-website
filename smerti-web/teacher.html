@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Connecting html file with css file -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- Name on new tab -->
+    <title>SMAN 1 Baturiti &mdash; Guru</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="smerti-tes.html">
+        <img
+          alt="Logo SMAN 1 Baturiti"
+          src="img/logo-sma-1-01.svg"
+          class="logo"
+        />
+      </a>
+
+      <!-- buat dalam menu list nnti -->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Profil</a></li>
+          <!-- dibuat dropdown -->
+          <div class="dropdown">
+            <li>
+              <button class="main-nav-link dropdown-btn">Akademik</button>
+            </li>
+            <div class="dropdown-content">
+              <a href="#">Guru</a>
+              <a href="student.html">Siswa</a>
+              <a href="#">Karyawan</a>
+            </div>
+          </div>
+          <li><a class="main-nav-link" href="#">Kegiatan</a></li>
+          <li><a class="main-nav-link" href="#">Berita</a></li>
+
+          <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
+          <li>
+            <a class="main-nav-link main-nav-tuition" href="#">Kontak</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-teacher">
+        <div class="teacher">
+          <div class="container"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

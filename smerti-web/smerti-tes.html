@@ -28,15 +28,16 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style/tes.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="teacher-section" href="teacher.html" />
 
     <title>SMAN 1 Baturiti</title>
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <!-- logo smerti dan navigasi -->
-      <a href="#">
+      <a href="#home">
         <img
           class="logo"
           alt="Logo SMAN 1 Baturiti"
@@ -46,9 +47,30 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Beranda</a></li>
-          <li><a class="main-nav-link" href="#">Profil</a></li>
-          <li><a class="main-nav-link" href="#">Kegiatan</a></li>
+          <li><a class="main-nav-link" href="#profil">Profil</a></li>
+          <!-- dibuat dropdown -->
+          <div class="dropdown">
+            <li>
+              <button class="main-nav-link dropdown-btn">Akademik</button>
+            </li>
+            <div class="dropdown-content">
+              <a href="teacher.html">Guru</a>
+              <a href="student.html">Siswa</a>
+              <a href="#">Karyawan</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li>
+              <button class="main-nav-link dropdown-btn">Kegiatan</button>
+            </li>
+            <div class="dropdown-content">
+              <a href="#">Lomba</a>
+              <a href="#">Seremoni</a>
+              <a href="#">Ekstrakurikuler</a>
+            </div>
+          </div>
+          <li><a class="main-nav-link" href="#">Berita</a></li>
+
           <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
           <li>
             <a class="main-nav-link main-nav-tuition" href="#">Kontak</a>
@@ -85,7 +107,7 @@
       <!-- nnti cek lagi ya -->
     </section>
 
-    <section class="section-profile">
+    <section class="section-profile" id="profil">
       <div class="profile">
         <div class="profile-heading">
           <h2 class="heading-second">Profil Sekolah</h2>
@@ -101,6 +123,12 @@
               berlokasi di desa Perean, Kecamatan Baturiti, Kabupaten Tabanan,
               Provinsi Bali.
             </p>
+            <a
+              href="https://www.google.com/maps/place/SMA+N+1+Baturiti/@-8.4203974,115.1932286,17z/data=!4m16!1m9!3m8!1s0x2dd223f0c719357d:0xfaae142275c390d2!2sSMA+N+1+Baturiti!8m2!3d-8.4203974!4d115.1958035!9m1!1b1!16s%2Fg%2F11bwc0r543!3m5!1s0x2dd223f0c719357d:0xfaae142275c390d2!8m2!3d-8.4203974!4d115.1958035!16s%2Fg%2F11bwc0r543?entry=ttu"
+              class="location-link"
+              target="_blank"
+              >Lihat &rarr;</a
+            >
           </div>
 
           <div class="profile-warp">
@@ -108,16 +136,37 @@
             <h3 class="heading-third heading-third-profile">Akreditasi</h3>
             <!-- foto kepala sekolah -->
             <p class="profil-description">
-              Lorem ipsum dolor sit amet A elit. Error Deserunt recusandae
-              corporis laborum voluptatum consequatur neque mollitia, dolor
-              nostrum eius eum voluptatibus.
+              Lorem ipsum dolor sit amet <strong>A</strong> elit. Error Deserunt
+              recusandae corporis laborum voluptatum consequatur neque mollitia,
+              dolor nostrum eius eum voluptatibus.
+            </p>
+          </div>
+
+          <div class="profile-warp">
+            <ion-icon name="locate-outline" class="profile-icon"></ion-icon>
+            <h3 class="heading-third heading-third-profile">Visi & Misi</h3>
+            <p class="profil-description">
+              Mencetak lulusan yang memiliki sikap beriman, berbudaya, cerdas
+              dan berprestasi. Meningkatkan kemampuan siswa pada bidang akademis
+              maupun non akademis.
+            </p>
+          </div>
+
+          <div class="profile-warp">
+            <ion-icon name="book-outline" class="profile-icon"></ion-icon>
+            <h3 class="heading-third heading-third-profile">Kurikulum</h3>
+            <p class="profil-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              repellendus cumque consectetur optio atque dicta similique
+              reiciendis pariatur. Hic amet culpa debitis.
             </p>
           </div>
         </div>
-        <div class="profile-count">
+
+        <!-- <div class="profile-count">
           <div class="container grid grid--3-cols margin-right-sm">
             <div>
-              <!-- icon untuk jumlah persons -->
+              icon untuk jumlah persons
               <h2 class="heading-second heading-second-num">47</h2>
               <ion-icon
                 name="person-outline"
@@ -144,7 +193,7 @@
               <h3 class="heading-third heading-third-name">Ruang kelas</h3>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -220,6 +269,109 @@
       </div>
     </section>
 
-    <section class="section-latest-news"></section>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="location-col">
+          <a href="#" class="footer-logo">
+            <img
+              src="img/logo-sma-1-01.svg"
+              class="logo"
+              alt="Logo SMAN 1 Baturiti"
+            />
+          </a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
+                target="_blank"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.youtube.com/@wartasmerti"
+                target="_blank"
+                ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            &copy; <span class="year">2019</span> SMAN 1 Baturiti. All Right
+            Reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Hubungi kami</p>
+          <address class="contacts">
+            <p class="address">
+              <!-- <ion-icon name="location-outline" class="social-icon"></ion-icon> -->
+              Br. Puseh, Ds. Perean, Baturiti, Tabanan, Bali.
+            </p>
+            <p class="telp">
+              <!-- <ion-icon
+                name="call-outline"
+                class="social-icon footer-icon"
+              ></ion-icon> -->
+              <a class="footer-link" href="tel:(0368) 2301064"
+                >(0368) 2301064</a
+              >
+            </p>
+            <p class="email">
+              <!-- <ion-icon
+                name="mail-outline"
+                class="social-icon footer-icon"
+              ></ion-icon
+              > -->
+              <a class="footer-link" href="mailto:sman1baturiti@gmail.com"
+                >sman1baturiti@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <div class="others-col">
+          <p class="footer-heading">Lainnya</p>
+          <div>
+            <ul class="others">
+              <li class="other-content">
+                <a href="guru.html">Guru</a>
+              </li>
+              <li class="other-content">
+                <a href="#">Siswa</a>
+              </li>
+              <li class="other-content">
+                <a href="#">Karyawan</a>
+              </li>
+              <li class="other-content">
+                <a href="#">Kegiatan</a>
+              </li>
+              <li class="other-content">
+                <a href="#">Berita</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="open-day-col">
+          <p class="footer-heading">Jam buka</p>
+
+          <p class="day-name"><b>Senin-Jumat</b></p>
+          <br />
+          <p class="time">7.00 am - 15.30 pm</p>
+
+          <p class="day-name"><b>Sabtu-Minggu</b></p>
+          <br />
+          <p class="time">Tutup</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
