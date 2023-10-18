@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Connecting html file with css file -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/staff-style.css" />
+
+    <!-- Name on new tab -->
+    <title>SMAN 1 Baturiti &mdash; Guru</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img
+          alt="Logo SMAN 1 Baturiti"
+          src="img/logo-sma-1-01.svg"
+          class="logo"
+        />
+      </a>
+
+      <!-- buat dalam menu list nnti -->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Profil</a></li>
+          <!-- dibuat dropdown -->
+          <div class="dropdown">
+            <li>
+              <button class="main-nav-link dropdown-btn">Akademik</button>
+            </li>
+            <div class="dropdown-content">
+              <a href="#">Staff</a>
+              <a href="student.html">Siswa</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li>
+              <button class="main-nav-link dropdown-btn">Kegiatan</button>
+            </li>
+            <div class="dropdown-content">
+              <a href="#">Lomba</a>
+              <a href="#">Seremoni</a>
+              <a href="#">Ekstrakurikuler</a>
+            </div>
+          </div>
+          <li><a class="main-nav-link" href="#">Berita</a></li>
+
+          <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
+          <li>
+            <a class="main-nav-link main-nav-tuition" href="#">Kontak</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="staff-hero">
+        <div class="container">
+          <div class="header-container">
+            <p class="header-text">Staff SMAN 1 Baturiti</p>
+          </div>
+        </div>
+      </div>
+      <section class="section-staff container">
+        <div class="teacher-heading">
+          <h2 class="heading-second">Kepala sekolah</h2>
+        </div>
+        <div class="head-master container">
+          <img
+            src="img/pak kepala.jpg"
+            alt="Kepala sekolah SMAN 1 Baturiti"
+            class="teacher-img teacher-img-top"
+          />
+
+          <div class="teacher-description">
+            <h3 class="heading-third">Drs. I Wayan Wardana Yasa.,M.Pd</h3>
+            <p class="teacher-title">Kepala sekolah SMAN 1 Baturiti.</p>
+
+            <p class="teacher-text">
+              Drs. I Wayan Wardana Yasa.,M.Pd lahir di Kuwum, pada 27 Juli 1967.
+              Beliau menjabat sebagai kepala sekolah di SMAN 1 Baturiti sejak
+              2021 lalu. Selaian menjabat sebagai kepala sekolah, beliu juga
+              turut serta menjadi pembina dalam OSN di bidang Biologi.
+            </p>
+          </div>
+        </div>
+        <div class="teacher-heading">
+          <h2 class="heading-second">Galeri Guru dan Tenaga Kependidikan</h2>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="img/guru-1.jpg"
+              alt="Guru SMAN 1 Baturiti menjadi juri untuk lomba Bulan Bahasa Bali"
+            />
+          </figure>
+
+          <figure class="gallery-item">
+            <!-- Kegiatan persembahyangan -->
+            <img
+              src="img/guru-2.jpg"
+              alt="Siswa mengikuti kegiatan persembahyangan"
+            />
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="img/sma-img.png"
+              alt="Siswa melakukan kegiatan pembersihan di sekitar area sekolah"
+            />
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="img/guru-4-resize.jpg"
+              alt="Siswa dan siswi SMERTI mengikuti acara lomba menyanyi untuk Bulan Bahasa Bali"
+            />
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="img/guru-5.jpg"
+              alt="Siswa dan siswi SMERTI mengikuti acara lomba menyanyi untuk Bulan Bahasa Bali"
+            />
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -62,49 +62,6 @@ body {
 }
 
 /*====================*/
-/* DROPDOWN */
-/*====================*/
-
-.dropdown-btn {
-  background-color: #fff;
-  color: #1a2d59;
-  padding: 0.7rem 1rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: #1a2d59;
-  display: block;
-  padding: 1.2rem 1.6rem;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #d1d5de;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/*====================*/
 /* HEADER */
 /*====================*/
 
@@ -239,7 +196,7 @@ body {
 .section-profile {
   background-color: #fff;
   /* margin: 5.2rem 4.8rem; */
-  padding: 4.8rem 9.6rem;
+  padding: 9.6rem 0;
 }
 
 .profile {
@@ -314,7 +271,7 @@ body {
 .section-activities {
   background-color: #fff;
   /* margin: 5.2rem 4.8rem; */
-  padding: 4.8rem 9.6rem;
+  padding: 9.6rem 0;
 }
 
 .activities {
@@ -332,7 +289,6 @@ body {
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
-  /* border: 5px solid #d61d39; */
 }
 
 .activity-content:hover {
@@ -375,7 +331,7 @@ body {
 
 footer {
   border-top: 1px solid #d1d5de;
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
   margin-top: 4rem;
 }
 

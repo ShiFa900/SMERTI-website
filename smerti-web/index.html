@@ -29,7 +29,8 @@
     />
 
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="teacher-section" href="teacher.html" />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="teacher-section" href="staff.html" />
 
     <title>SMAN 1 Baturiti</title>
   </head>
@@ -54,9 +55,9 @@
               <button class="main-nav-link dropdown-btn">Akademik</button>
             </li>
             <div class="dropdown-content">
-              <a href="teacher.html">Guru</a>
+              <!-- staff berisi daftar guru dan pegawai -->
+              <a href="staff.html">Staff</a>
               <a href="student.html">Siswa</a>
-              <a href="#">Karyawan</a>
             </div>
           </div>
           <div class="dropdown">
@@ -80,12 +81,6 @@
     </header>
 
     <section class="section-hero">
-      <!-- <img
-          alt="Kegiatan upacara di SMERTI"
-          class="hero-img"
-          src="img/siswa.jpeg"
-        /> -->
-
       <div class="hero">
         <div class="hero-text-box">
           <h1 class="heading-first">Kami percaya</h1>
@@ -95,19 +90,19 @@
             peduli akan sekitarnya.
           </p>
 
-          <a href="#" class="btn">Lebih lanjut &darr;</a>
+          <a href="#profil" class="btn">Lebih lanjut &darr;</a>
         </div>
 
         <div
           role="img"
-          aria-label="Kegiatan uparaca di SMERTI"
+          aria-label="Kegiatan uparcara di SMERTI"
           class="hero-img"
         ></div>
       </div>
       <!-- nnti cek lagi ya -->
     </section>
 
-    <section class="section-profile" id="profil">
+    <section class="section-profile container" id="profil">
       <div class="profile">
         <div class="profile-heading">
           <h2 class="heading-second">Profil Sekolah</h2>
@@ -162,60 +157,47 @@
             </p>
           </div>
         </div>
-
-        <!-- <div class="profile-count">
-          <div class="container grid grid--3-cols margin-right-sm">
-            <div>
-              icon untuk jumlah persons
-              <h2 class="heading-second heading-second-num">47</h2>
-              <ion-icon
-                name="person-outline"
-                class="profile-icon profile-icon-sm"
-              ></ion-icon>
-              <h3 class="heading-third heading-third-name">Pengajar</h3>
-            </div>
-
-            <div>
-              <h2 class="heading-second heading-second-num">659</h2>
-              <ion-icon
-                name="school-outline"
-                class="profile-icon profile-icon-sm"
-              ></ion-icon>
-              <h3 class="heading-third heading-third-name">Total siswa</h3>
-            </div>
-
-            <div>
-              <h2 class="heading-second heading-second-num">18</h2>
-              <ion-icon
-                name="square-outline"
-                class="profile-icon profile-icon-sm"
-              ></ion-icon>
-              <h3 class="heading-third heading-third-name">Ruang kelas</h3>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
 
-    <section class="section-activities">
+    <section class="section-news">
+      <div class="container">
+        <div class="latest-news-header">
+          <div class="latest-news-box">
+            <h2 class="heading-second">Berita utama</h2>
+          </div>
+        </div>
+
+        <div class="container grid grid--3-cols">
+          <ul class="post-news">
+            <li>
+              <div class="latest-news-content">
+                <img
+                  src="img/hut.jpg"
+                  alt="Perayaan HUT SMAN 1 Baturiti"
+                  class="latest-news"
+                />
+                <span></span>
+                <p></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section-activities container">
       <div class="activities-heading">
         <h2 class="heading-second">Kegiatan sekolah</h2>
       </div>
 
       <div class="activities">
         <div class="container grid grid--4-cols">
-          <!-- <button class="btn btn-round">
-            <ion-icon
-              name="chevron-back-outline"
-              class="btn btn-carousel"
-            ></ion-icon>
-          </button> -->
-          <!-- Kegiatan belajar mengajar di kelas -->
           <div class="activity-content">
             <img
               src="img/belajar.jpg"
               alt="Kegiatan belajar mengajar di kelas"
-              class="activity-img activity-img-sm"
+              class="teacher-img activity-img-sm"
             />
 
             <p class="activity-description">
@@ -224,11 +206,10 @@
           </div>
 
           <div class="activity-content">
-            <!-- Kegiatan persembahyangan -->
             <img
               src="img/sembahyang.jpg"
               alt="Siswa mengikuti kegiatan persembahyangan"
-              class="activity-img"
+              class="teacher-img"
             />
 
             <p class="activity-description">
@@ -240,7 +221,7 @@
             <img
               src="img/bersihan.jpg"
               alt="Siswa melakukan kegiatan pembersihan di sekitar area sekolah"
-              class="activity-img"
+              class="teacher-img"
             />
 
             <p class="activity-description">
@@ -252,22 +233,16 @@
             <img
               src="img/lomba.jpg"
               alt="Siswa dan siswi SMERTI mengikuti acara lomba menyanyi untuk Bulan Bahasa Bali"
-              class="activity-img"
+              class="teacher-img"
             />
 
             <p class="activity-description">
               Kegiatan lomba untuk Bulan Bahasa Bali.
             </p>
           </div>
-          <!-- <button class="btn btn-round">
-            <ion-icon
-              name="chevron-forward-outline"
-              class="btn btn-carousel"
-            ></ion-icon>
-          </button> -->
         </div>
       </div>
-    </section>
+    </section> -->
 
     <footer class="footer">
       <div class="container grid grid--footer">

@@ -1,0 +1,93 @@
+/*====================*/
+/* STAFF SECTION */
+/*====================*/
+
+.section-staff {
+  /* background-color: aqua; */
+  color: #1a2d59;
+  padding: 4.8rem 9.6rem;
+}
+
+.staff-hero {
+  background-color: #000;
+  height: 60vh;
+  background-image: linear-gradient(
+      rgba(40, 38, 38, 0.378),
+      rgba(40, 38, 38, 0.378)
+    ),
+    url(../img/guru-3.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.header-text {
+  font-size: 6.4rem;
+  font-weight: 500;
+  color: #fff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Head Master */
+
+.head-master {
+  display: flex;
+  width: 100%;
+  margin-bottom: 6.5rem;
+}
+
+.teacher-heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6.5rem;
+}
+
+.container-margin-left {
+  margin-left: 6.8rem;
+}
+
+.teacher-img-top {
+  width: 50vh;
+  border-radius: 5px;
+}
+
+.teacher-text {
+  font-size: 1.4rem;
+  border-top: 1px solid #1a2d59;
+  padding-top: 2.4rem;
+  line-height: 1.5;
+}
+
+.teacher-title {
+  padding-bottom: 2.4rem;
+}
+
+.teacher-description {
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 2.4rem;
+  /* transform: translate(0, 20%); */
+}
+
+/* Teacher */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  row-gap: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+}
