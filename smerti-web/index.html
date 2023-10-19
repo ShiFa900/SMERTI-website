@@ -81,7 +81,7 @@
     </header>
 
     <section class="section-hero">
-      <div class="hero">
+      <div class="hero" id="hero">
         <div class="hero-text-box">
           <h1 class="heading-first">Kami percaya</h1>
           <p class="hero-description">
@@ -95,7 +95,7 @@
 
         <div
           role="img"
-          aria-label="Kegiatan uparcara di SMERTI"
+          aria-label="Kegiatan upacara di SMERTI"
           class="hero-img"
         ></div>
       </div>
@@ -163,188 +163,184 @@
     <section class="section-news">
       <div class="container">
         <div class="latest-news-header">
-          <div class="latest-news-box">
-            <h2 class="heading-second">Berita utama</h2>
-          </div>
+          <h2 class="heading-second">Berita utama</h2>
         </div>
 
         <div class="container grid grid--3-cols">
-          <ul class="post-news">
-            <li>
-              <div class="latest-news-content">
-                <img
-                  src="img/hut.jpg"
-                  alt="Perayaan HUT SMAN 1 Baturiti"
-                  class="latest-news"
-                />
-                <span></span>
-                <p></p>
-              </div>
-            </li>
-          </ul>
+          <div class="latest-news-content">
+            <img
+              src="img/ultah.png"
+              alt="Perayaan HUT SMAN 1 Baturiti"
+              class="latest-news-img"
+            />
+            <div class="post-content">
+              <p>
+                <span>14/06/2023</span> <br />
+                <a href="#" class="post-content-text"
+                  >SMERTI merayakan ulang tahun ke-34</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="latest-news-content">
+            <img
+              src="img/tarik.png"
+              alt="Perayaan lomba memperingati Hari Kemerdekaan"
+              class="latest-news-img"
+            />
+            <div class="post-content">
+              <p>
+                <span>17/08/2023</span>
+                <br />
+                <a href="#" class="post-content-text">Dirgahayu INDONESIAKU!</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="latest-news-content">
+            <img
+              src="img/mpls.png"
+              alt="Masa pengenalan lingkungan sekolah SMERTI"
+              class="latest-news-img"
+            />
+            <div class="post-content">
+              <p>
+                <span>10/07/2023</span><br />
+                <a href="#" class="post-content-text"
+                  >Kegiatan MPLS di SMERTI</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- <section class="section-activities container">
-      <div class="activities-heading">
-        <h2 class="heading-second">Kegiatan sekolah</h2>
-      </div>
-
-      <div class="activities">
-        <div class="container grid grid--4-cols">
-          <div class="activity-content">
-            <img
-              src="img/belajar.jpg"
-              alt="Kegiatan belajar mengajar di kelas"
-              class="teacher-img activity-img-sm"
-            />
-
-            <p class="activity-description">
-              Suasana kegiatan belajar mengajar di kelas.
-            </p>
+    <footer>
+      <div class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="#hero" class="footer-logo">
+              <img
+                src="img/logo-sma-1-01.svg"
+                class="logo"
+                alt="Logo SMAN 1 Baturiti"
+              />
+            </a>
+            <p class="footer-logo-text">SMAN 1 Baturiti</p>
           </div>
 
-          <div class="activity-content">
-            <img
-              src="img/sembahyang.jpg"
-              alt="Siswa mengikuti kegiatan persembahyangan"
-              class="teacher-img"
-            />
-
-            <p class="activity-description">
-              Persembahyangan bagi siswa beragama Hindu.
-            </p>
-          </div>
-
-          <div class="activity-content">
-            <img
-              src="img/bersihan.jpg"
-              alt="Siswa melakukan kegiatan pembersihan di sekitar area sekolah"
-              class="teacher-img"
-            />
-
-            <p class="activity-description">
-              Kegiatan bersih-bersih di area sekolah.
-            </p>
-          </div>
-
-          <div class="activity-content">
-            <img
-              src="img/lomba.jpg"
-              alt="Siswa dan siswi SMERTI mengikuti acara lomba menyanyi untuk Bulan Bahasa Bali"
-              class="teacher-img"
-            />
-
-            <p class="activity-description">
-              Kegiatan lomba untuk Bulan Bahasa Bali.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <footer class="footer">
-      <div class="container grid grid--footer">
-        <div class="location-col">
-          <a href="#" class="footer-logo">
-            <img
-              src="img/logo-sma-1-01.svg"
-              class="logo"
-              alt="Logo SMAN 1 Baturiti"
-            />
-          </a>
-          <ul class="social-links">
-            <li>
-              <a class="footer-link" href="#"
-                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
-              ></a>
-            </li>
-            <li>
+          <div class="address-col">
+            <p class="footer-heading first-row">Hubungi</p>
+            <address class="contacts">
               <a
-                class="footer-link"
-                href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
-                target="_blank"
-                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a
-                class="footer-link"
-                href="https://www.youtube.com/@wartasmerti"
-                target="_blank"
-                ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
-              ></a>
-            </li>
-          </ul>
-
-          <p class="copyright">
-            &copy; <span class="year">2019</span> SMAN 1 Baturiti. All Right
-            Reserved.
-          </p>
-        </div>
-        <div class="address-col">
-          <p class="footer-heading">Hubungi kami</p>
-          <address class="contacts">
-            <p class="address">
-              <!-- <ion-icon name="location-outline" class="social-icon"></ion-icon> -->
-              Br. Puseh, Ds. Perean, Baturiti, Tabanan, Bali.
-            </p>
+                href="https://www.google.com/maps/place/SMA+N+1+Baturiti/@-8.4203974,115.1932286,17z/data=!4m16!1m9!3m8!1s0x2dd223f0c719357d:0xfaae142275c390d2!2sSMA+N+1+Baturiti!8m2!3d-8.4203974!4d115.1958035!9m1!1b1!16s%2Fg%2F11bwc0r543!3m5!1s0x2dd223f0c719357d:0xfaae142275c390d2!8m2!3d-8.4203974!4d115.1958035!16s%2Fg%2F11bwc0r543?entry=ttu"
+                class="address"
+              >
+                <ion-icon name="location-outline" class="social-icon"></ion-icon
+                >Br. Puseh, Ds. Perean, Baturiti, Tabanan, Bali.
+              </a>
+            </address>
             <p class="telp">
-              <!-- <ion-icon
-                name="call-outline"
-                class="social-icon footer-icon"
-              ></ion-icon> -->
+              <ion-icon name="call-outline" class="social-icon"></ion-icon>
               <a class="footer-link" href="tel:(0368) 2301064"
                 >(0368) 2301064</a
               >
             </p>
             <p class="email">
-              <!-- <ion-icon
-                name="mail-outline"
-                class="social-icon footer-icon"
-              ></ion-icon
-              > -->
+              <ion-icon name="mail-outline" class="social-icon"></ion-icon>
               <a class="footer-link" href="mailto:sman1baturiti@gmail.com"
                 >sman1baturiti@gmail.com</a
               >
             </p>
-          </address>
-        </div>
+          </div>
 
-        <div class="others-col">
-          <p class="footer-heading">Lainnya</p>
-          <div>
-            <ul class="others">
-              <li class="other-content">
-                <a href="guru.html">Guru</a>
+          <div class="others-col">
+            <p class="footer-heading">Lainnya</p>
+            <div>
+              <ul class="others">
+                <li class="other-content">
+                  <a href="staff.html">Staff</a>
+                </li>
+                <li class="other-content">
+                  <a href="#">Siswa</a>
+                </li>
+
+                <li class="other-content">
+                  <a href="#">Kegiatan</a>
+                </li>
+                <li class="other-content">
+                  <a href="#">Seremoni</a>
+                </li>
+                <li class="other-content">
+                  <a href="#">Berita</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="open-day-col">
+            <p class="footer-heading">Jam buka</p>
+
+            <p class="day-name">Senin-Jumat</p>
+            <br />
+            <p class="time">7.00 am - 15.30 pm</p>
+
+            <p class="day-name">Sabtu-Minggu</p>
+            <br />
+            <p class="time">Tutup</p>
+          </div>
+
+          <div class="social-col">
+            <p class="footer-heading">Ikuti kami</p>
+            <ul class="social-links">
+              <li class="social-list">
+                <a href="#" class="icon-text">Instagram</a>
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
               </li>
-              <li class="other-content">
-                <a href="#">Siswa</a>
+              <li class="social-list">
+                <a
+                  href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
+                  class="icon-text"
+                  >Facebook</a
+                >
+                <a
+                  class="footer-link"
+                  href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
+                  target="_blank"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
               </li>
-              <li class="other-content">
-                <a href="#">Karyawan</a>
-              </li>
-              <li class="other-content">
-                <a href="#">Kegiatan</a>
-              </li>
-              <li class="other-content">
-                <a href="#">Berita</a>
+              <li class="social-list">
+                <a href="https://www.youtube.com/@wartasmerti" class="icon-text"
+                  >YouTube</a
+                >
+                <a
+                  class="footer-link"
+                  href="https://www.youtube.com/@wartasmerti"
+                  target="_blank"
+                  ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
+                ></a>
               </li>
             </ul>
           </div>
         </div>
+      </div>
 
-        <div class="open-day-col">
-          <p class="footer-heading">Jam buka</p>
-
-          <p class="day-name"><b>Senin-Jumat</b></p>
-          <br />
-          <p class="time">7.00 am - 15.30 pm</p>
-
-          <p class="day-name"><b>Sabtu-Minggu</b></p>
-          <br />
-          <p class="time">Tutup</p>
+      <div class="tiny-footer">
+        <div class="container">
+          <div class="row">
+            <p>
+              &copy; <span class="year">2019</span> SMAN 1 Baturiti. All Right
+              Reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

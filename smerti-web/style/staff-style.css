@@ -5,7 +5,8 @@
 .section-staff {
   /* background-color: aqua; */
   color: #1a2d59;
-  padding: 4.8rem 9.6rem;
+  /* padding: 4.8rem 9.6rem; */
+  padding: 4.8rem 0 9.6rem;
 }
 
 .staff-hero {
@@ -90,4 +91,9 @@
   display: block;
   width: 100%;
   transition: all 0.3s;
+}
+
+.gallery-item img:hover {
+  filter: opacity(60%);
+  transform: scale(1.1);
 }
