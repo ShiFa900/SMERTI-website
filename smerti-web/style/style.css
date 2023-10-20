@@ -16,8 +16,11 @@ shade:
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-size: 1.6rem;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 1;
@@ -25,7 +28,7 @@ body {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 1140px;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
@@ -54,7 +57,7 @@ body {
   justify-content: center;
   /* font-weight: 500; */
   align-items: center;
-  height: 6.4rem;
+  /* height: 6.4rem; */
   padding: 0 6.4rem;
   position: relative;
   background-color: #fff;
@@ -65,22 +68,9 @@ body {
 /*====================*/
 
 .logo {
-  height: 7.2rem;
+  height: 10.2rem;
   display: block;
 }
-
-.heading-first {
-  line-height: 1.5;
-  font-size: 3.5rem;
-}
-
-.heading-second {
-  font-size: 2.4rem;
-}
-
-/* .heading-third {
-  font-size: 1.4rem;
-} */
 
 .heading-second,
 .heading-first {
@@ -89,14 +79,14 @@ body {
 }
 
 .main-nav {
-  padding-left: 3.2rem;
+  padding-left: 6.4rem;
 }
 
 /* NAVIGATION */
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 6.4rem;
   cursor: pointer;
   align-items: center;
 }
@@ -106,13 +96,14 @@ body {
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
+  font-size: 2.4rem;
   color: #1a2d59;
   transition: all 0.3s;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #1717e6;
+  color: #d61d39;
 }
 
 .main-nav-tuition:link,
@@ -144,13 +135,15 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4.2rem;
+
   overflow: hidden;
 }
 
 .hero-text-box {
   width: 100%;
-  padding: 9.6rem;
+  padding: 9.6rem 0;
   color: #1a2d59;
 }
 
@@ -164,11 +157,13 @@ body {
     url(../img/siswa.jpeg);
   background-size: cover;
   background-position: center;
+  margin-right: 0;
 }
 
 .hero-description {
-  line-height: 2;
-  margin-bottom: 4.6rem;
+  font-size: 1.8rem;
+  line-height: 1.75;
+  margin-bottom: 3.2rem;
 }
 
 .btn:link,
@@ -194,14 +189,16 @@ body {
 
 .section-profile {
   background-color: #fff;
-  /* padding: 6.4rem 0; */
-  padding: 9.6rem 6.8rem;
-  /* padding: 9.6rem 0; */
+  padding: 9.6rem 0;
 }
 
 .profile {
   color: #1a2d59;
   position: relative;
+}
+
+.profile:last-child {
+  margin-bottom: 4.8rem;
 }
 
 .location-link:link,
@@ -222,15 +219,7 @@ body {
 .profile-heading {
   display: flex;
   justify-content: center;
-  margin-bottom: 6.5rem;
-}
-
-.profile-count {
-  padding: 6.4rem 4.8rem 4.8rem 4.8rem;
-}
-
-.margin-right-sm {
-  margin-left: 9.6rem !important;
+  margin-bottom: 4.8rem;
 }
 
 .heading-second-num {
@@ -244,18 +233,10 @@ body {
   margin-bottom: 1.6rem;
 }
 
-.profil-description {
-  line-height: 1.5;
-}
-
-.profile-icon-sm {
-  margin-bottom: 1.2rem !important;
-}
-
 .profile-icon {
   color: #d61d39;
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 4.2rem;
+  height: 4.2rem;
   margin-bottom: 2.4rem;
 }
 
@@ -265,7 +246,6 @@ body {
 
 .section-activities {
   background-color: #fff;
-  /* margin: 5.2rem 4.8rem; */
   padding: 9.6rem 0;
 }
 
@@ -329,8 +309,58 @@ body {
   padding: 9.6rem 0;
 }
 
+.news:last-child {
+  margin-bottom: 4.8rem;
+}
+
 .latest-news-img {
+  display: block;
   width: 100%;
+  border-radius: 3px;
+  transition: all 0.3s ease-in;
+}
+
+.latest-news-img:hover {
+  /* filter: opacity(60%); */
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+}
+
+.latest-news-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.8rem;
+}
+
+.btn-news {
+  margin: 6.4rem 0;
+  text-align: center;
+}
+
+.post-content-text:link,
+.post-content-text:visited {
+  line-height: 1.05;
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+.post-content-text:hover,
+.post-content-text:active {
+  color: #d61d39;
+  text-decoration: underline #d61d39;
+}
+
+.post-content span {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+  color: #5f6c8b;
 }
 
 /*====================*/
@@ -339,7 +369,7 @@ body {
 
 .footer {
   /* border-top: 1px solid #d1d5de; */
-  padding: 9.6rem 9.6rem;
+  padding: 9.6rem 0;
   background-color: #e8eaee;
 }
 
@@ -390,7 +420,7 @@ body {
 
 .contacts {
   font-style: normal;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   line-height: 1.6;
   margin-bottom: 1.4rem;
 }
@@ -451,7 +481,7 @@ body {
 .other-content a:link,
 .other-content a:visited {
   text-decoration: none;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   color: inherit;
   transition: all 0.3s;
 }

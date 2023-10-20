@@ -14,44 +14,74 @@
 
     <!-- Connecting html file with css file -->
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/staff-style.css" />
+    <link rel="stylesheet" href="style/contact-style.css" />
 
     <!-- Name on new tab -->
     <title>SMAN 1 Baturiti &mdash; Kontak kami</title>
   </head>
   <body>
-    <header class="header">
-      <a href="index.html">
+    <header class="header" id="home">
+      <!-- logo smerti dan navigasi -->
+      <a href="#home">
         <img
+          class="logo"
           alt="Logo SMAN 1 Baturiti"
           src="img/logo-sma-1-01.svg"
-          class="logo"
         />
       </a>
 
-      <!-- buat dalam menu list nnti -->
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Profil</a></li>
+          <li><a class="main-nav-link" href="#profil">Profil</a></li>
           <!-- dibuat dropdown -->
           <div class="dropdown">
             <li>
               <button class="main-nav-link dropdown-btn">Akademik</button>
             </li>
             <div class="dropdown-content">
-              <a href="#">Guru</a>
+              <!-- staff berisi daftar guru dan pegawai -->
+              <a href="staff.html">Staff</a>
               <a href="student.html">Siswa</a>
-              <a href="#">Karyawan</a>
             </div>
           </div>
-          <li><a class="main-nav-link" href="#">Kegiatan</a></li>
-          <li><a class="main-nav-link" href="#">Berita</a></li>
+          <div class="dropdown">
+            <li>
+              <button class="main-nav-link dropdown-btn">Kegiatan</button>
+            </li>
+            <div class="dropdown-content">
+              <a href="#">Lomba</a>
+              <a href="#">Seremoni</a>
+              <a href="#">Ekstrakurikuler</a>
+            </div>
+          </div>
+          <li><a class="main-nav-link" href="#news">Berita</a></li>
 
           <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
           <li>
-            <a class="main-nav-link main-nav-tuition" href="#">Kontak</a>
+            <a class="main-nav-link main-nav-tuition" href="contact.html"
+              >Kontak</a
+            >
           </li>
         </ul>
       </nav>
     </header>
+
+    <main>
+      <section class="section-contact">
+        <div class="container">
+          <div class="contacts">
+            <div class="contact-header">
+              <h3 class="heading-second">Kunjungi atau hubungi kami</h3>
+              <p class="contact-descripton">
+                Ayo segera bergabung dengan kami, menggapai impian bersama untuk
+                masa depan yang cemerlang
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
