@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "rubik", sans-serif;
+  font-family: "open-sans", sans-serif;
   font-weight: 400;
   line-height: 1;
   color: #555;
@@ -55,7 +55,7 @@ body {
   display: flex;
   /* justify-content: space-between; */
   justify-content: center;
-  /* font-weight: 500; */
+  /* font-weight: 600; */
   align-items: center;
   /* height: 6.4rem; */
   padding: 0 6.4rem;
@@ -89,13 +89,13 @@ body {
   gap: 6.4rem;
   cursor: pointer;
   align-items: center;
+  font-weight: 600;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  font-weight: 500;
   font-size: 2.4rem;
   color: #1a2d59;
   transition: all 0.3s;
@@ -130,13 +130,19 @@ body {
   /* background-color: #eee; */
   background-color: #e8eaee;
   border-top: 5px solid #d61d39;
-  /* padding: 9.6rem 0; */
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 4.2rem;
+  height: auto;
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 0.303),
+      rgba(57, 79, 126, 0.4)
+    ),
+    url(../img/siswa-1.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 0;
 
   overflow: hidden;
 }
@@ -144,26 +150,18 @@ body {
 .hero-text-box {
   width: 100%;
   padding: 9.6rem 0;
-  color: #1a2d59;
+  color: #fff;
 }
 
-.hero-img {
-  height: auto;
-  background-image: linear-gradient(
-      to right top,
-      rgba(221, 221, 221, 0.4),
-      rgba(69, 97, 159, 0.4)
-    ),
-    url(../img/siswa.jpeg);
-  background-size: cover;
-  background-position: center;
-  margin-right: 0;
+.heading-first-hero {
+  text-align: center;
 }
 
 .hero-description {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.75;
   margin-bottom: 3.2rem;
+  text-align: center;
 }
 
 .btn:link,
@@ -171,7 +169,7 @@ body {
   background-color: #d61d39;
   padding: 0.7rem 2rem;
   border-radius: 3px;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   text-decoration: none;
   color: #fff;
@@ -198,7 +196,7 @@ body {
 }
 
 .profile:last-child {
-  margin-bottom: 4.8rem;
+  margin-bottom: 0;
 }
 
 .location-link:link,
@@ -241,66 +239,6 @@ body {
 }
 
 /*====================*/
-/* ACTIVITY */
-/*====================*/
-
-.section-activities {
-  background-color: #fff;
-  padding: 9.6rem 0;
-}
-
-.activities {
-  /* display: grid; */
-  column-gap: 1.2rem;
-  row-gap: 1.2rem;
-  color: #1a2d59;
-}
-
-.activity-content {
-  margin-top: 6.4rem;
-  padding: 0 0 5.2rem 0;
-
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 11px;
-  overflow: hidden;
-  transition: all 0.4s;
-}
-
-.activity-content:hover {
-  transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
-}
-
-.activities-heading {
-  display: flex;
-  position: absolute;
-  color: #1a2d59;
-  margin-bottom: 3.4rem;
-}
-
-.activity-img {
-  /* margin-top: 2.4rem; */
-  border-radius: top 7px;
-  width: 100%;
-}
-
-.activity-description {
-  margin-top: 2.4rem;
-  line-height: 1.5;
-  padding: 0 1.6rem;
-  align-items: center;
-}
-
-.btn-round {
-  border: 1px solid #d61d39;
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
-  background: none;
-  cursor: pointer;
-}
-
-/*====================*/
 /* SECTION NEWS */
 /*====================*/
 
@@ -337,15 +275,29 @@ body {
   text-align: center;
 }
 
+.news-date-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #76819b;
+}
+
+.content-warp {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+  /* justify-content: center; */
+}
+
 .post-content-text:link,
 .post-content-text:visited {
   line-height: 1.05;
-  font-size: 1.8rem;
-  font-weight: 500;
+  /* font-size: 1.8rem; */
+  font-weight: 600;
   display: inline-block;
   text-decoration: none;
   color: inherit;
   transition: all 0.2s ease-in-out;
+  margin-top: 2.4rem;
 }
 
 .post-content-text:hover,
@@ -356,11 +308,11 @@ body {
 
 .post-content span {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1.5em;
   margin-bottom: 1.2rem;
   margin-top: 1.2rem;
-  color: #5f6c8b;
+  color: #76819b;
 }
 
 /*====================*/
@@ -374,43 +326,34 @@ body {
 }
 
 .grid--footer {
-  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr;
-  gap: 4.8rem;
+  grid-template-columns: 1.2fr 2fr 1fr 1.2fr 1fr;
+  column-gap: 2.4rem;
 }
 
 .footer-logo .logo {
   height: 15.8rem;
-  padding-right: 4.8rem;
-  /* border-right: 1px solid #8d96ac; */
+  padding-right: 0;
 }
 
 .logo-col {
   border-right: 1px solid #999999;
-  /* margin-bottom: auto; */
+  align-items: center;
+  /* padding-right: 1.2rem; */
 }
 
 .footer-logo-text {
   letter-spacing: 1.5px;
-  /* margin-top: auto; */
-  justify-content: center;
-  align-self: flex-end;
+  font-size: 1.6rem;
+}
+
+.footer a:hover,
+.footer-nav:hover {
+  color: #333333;
 }
 
 .social-icon {
-  height: 2.4rem;
-}
-
-.social-links {
-  justify-content: center;
-  list-style: none;
-}
-
-.icon-text {
-  color: inherit;
-  text-decoration: none;
-  display: flex;
-  position: absolute;
-  transform: translate(50%, 50%);
+  width: 3rem;
+  height: 2rem;
 }
 
 .icon-text:hover,
@@ -418,11 +361,13 @@ body {
   color: #888888;
 }
 
-.contacts {
+.first-row-content,
+.social-list {
   font-style: normal;
-  /* font-size: 1.6rem; */
   line-height: 1.6;
-  margin-bottom: 1.4rem;
+  margin: 2.4rem 0;
+  font-size: 1.6rem;
+  /* justify-content: center; */
 }
 
 .row {
@@ -448,40 +393,45 @@ body {
 }
 
 .footer-link {
+  align-items: center;
   text-decoration: none;
   color: inherit;
 }
 
-.address {
+.contacts,
+.phone,
+.email-address,
+.social-list {
+  font-style: normal;
   text-align: start;
   text-decoration: none;
   color: inherit;
-}
-
-.telp,
-.email,
-.time,
-.social-list,
-.address {
-  /* margin-top: 3.2rem; */
-  margin-bottom: 1.4rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
 }
 
 .day-name {
   color: #333333;
+  margin-bottom: 1.2rem;
+}
+
+.day-content {
+  font-size: 1.6rem;
+  margin: 3.4rem 0;
 }
 
 .others {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  row-gap: 1.2rem;
 }
 
 .other-content a:link,
 .other-content a:visited {
   text-decoration: none;
-  /* font-size: 1.6rem; */
+  font-size: 1.6rem;
   color: inherit;
   transition: all 0.3s;
 }

@@ -1,4 +1,28 @@
 /*====================*/
+/* STAFF HERO SECTION */
+/*====================*/
+
+.section-staff-hero {
+  background-color: #e8eaee;
+  border-top: 5px solid #d61d39;
+}
+
+.staff-hero {
+  height: auto;
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 0.504),
+      rgba(57, 79, 126, 0.4)
+    ),
+    url(../img/guru-smansa.png);
+  background-size: cover;
+  background-position: top;
+  margin-right: 0;
+
+  overflow: hidden;
+}
+
+/*====================*/
 /* STAFF SECTION */
 /*====================*/
 
@@ -7,47 +31,23 @@
   color: #1a2d59;
 }
 
-.staff-hero {
-  background-color: #000;
-  height: 60vh;
-  background-image: linear-gradient(
-      rgba(40, 38, 38, 0.378),
-      rgba(40, 38, 38, 0.378)
-    ),
-    url(../img/guru-3.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-}
-
-.header-text {
-  font-size: 6.4rem;
-  font-weight: 600;
-  letter-spacing: 1.75px;
-  color: #fff;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* Head Master */
 
 .head-master {
-  display: flex;
-  width: 100%;
-  padding-bottom: 9.6rem ;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 1.2rem;
+  /* padding-bottom: 9.6rem; */
 }
 
 .teacher-heading {
   display: flex;
   justify-content: center;
-  margin-bottom: 9.6rem;
+  margin-bottom: 4.8rem;
 }
 
 .teacher-img-top {
-  width: 50vh;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -74,11 +74,13 @@
   /* transform: translate(0, 20%); */
 }
 
-/* Teacher */
+/*====================*/
+/* STAFF GALLERY SECTION */
+/*====================*/
 
-.staff-gallery{
+.section-staff-gallery {
   padding: 9.6rem 0;
-
+  color: #1a2d59;
 }
 
 .gallery {
