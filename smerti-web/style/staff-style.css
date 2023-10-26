@@ -48,7 +48,7 @@
 
 .teacher-img-top {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 /* .teacher-img {
@@ -60,6 +60,14 @@
   border-top: 1px solid #1a2d59;
   padding-top: 2.4rem;
   line-height: 1.75;
+}
+
+.teacher-quote {
+  font-style: italic;
+  margin: 2.4rem 0;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: inherit;
 }
 
 .teacher-title {
@@ -75,6 +83,38 @@
 }
 
 /*====================*/
+/* INFO SECTION */
+/*====================*/
+
+.info-section {
+  color: #1a2d59;
+  padding: 9.6rem 0;
+}
+
+.info-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #bac0cd;
+  margin-bottom: 1.2rem;
+}
+
+.info-description {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.info-icon-head {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 2.4rem 0 1.8rem 0;
+}
+
+.profile-icon-info {
+  margin-bottom: 0;
+}
+
+/*====================*/
 /* STAFF GALLERY SECTION */
 /*====================*/
 
@@ -85,7 +125,7 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.6rem;
   row-gap: 1.6rem;
 }

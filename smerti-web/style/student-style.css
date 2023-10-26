@@ -1,16 +1,18 @@
-.section-staff {
-  padding: 4.8rem 6.4rem;
-}
+/*====================*/
+/* STAFF HERO SECTION */
+/*====================*/
 
 .student-hero {
-  background-color: #000;
-  height: 100vh;
+  height: auto;
   background-image: linear-gradient(
-      rgba(40, 38, 38, 0.378),
-      rgba(40, 38, 38, 0.378)
+      to right top,
+      rgba(0, 0, 0, 0.504),
+      rgba(57, 79, 126, 0.4)
     ),
-    url(../img/siswa-1.jpg);
+    url(../img/siswa-header.JPG);
   background-size: cover;
   background-position: center;
-  position: relative;
+  margin-right: 0;
+
+  overflow: hidden;
 }

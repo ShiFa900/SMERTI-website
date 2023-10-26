@@ -12,36 +12,45 @@
       rel="stylesheet"
     />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <!-- Connecting html file with css file -->
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/general.css" />
     <link rel="stylesheet" href="style/staff-style.css" />
-    <link rel="stylesheet" href="style/contact-style.css" />
+    <link rel="stylesheet" href="style/student-style.css" />
 
     <!-- Name on new tab -->
-    <title>SMAN 1 Baturiti &mdash; Kontak kami</title>
+    <title>SMAN 1 Baturiti &mdash; Guru</title>
   </head>
+
   <body>
-    <header class="header" id="home">
-      <!-- logo smerti dan navigasi -->
-      <a href="#home">
+    <header class="header">
+      <a href="index.html">
         <img
-          class="logo"
           alt="Logo SMAN 1 Baturiti"
           src="img/logo-sma-1-01.svg"
+          class="logo"
         />
       </a>
 
+      <!-- buat dalam menu list nnti -->
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#profil">Profil</a></li>
+          <li><a class="main-nav-link" href="index.html">Profil</a></li>
           <!-- dibuat dropdown -->
           <div class="dropdown">
             <li>
               <button class="main-nav-link dropdown-btn">Akademik</button>
             </li>
             <div class="dropdown-content">
-              <!-- staff berisi daftar guru dan pegawai -->
               <a href="staff.html">Staff</a>
               <a href="student.html">Siswa</a>
             </div>
@@ -56,7 +65,7 @@
               <a href="#">Ekstrakurikuler</a>
             </div>
           </div>
-          <li><a class="main-nav-link" href="#news">Berita</a></li>
+          <li><a class="main-nav-link" href="index.html/#news">Berita</a></li>
 
           <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
           <li>
@@ -68,20 +77,154 @@
       </nav>
     </header>
 
-    <main>
-      <section class="section-contact">
-        <div class="container">
-          <div class="contacts">
-            <div class="contact-header">
-              <h3 class="heading-second">Kunjungi atau hubungi kami</h3>
-              <p class="contact-descripton">
-                Ayo segera bergabung dengan kami, menggapai impian bersama untuk
-                masa depan yang cemerlang
-              </p>
+    <footer>
+      <div class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="#hero" class="footer-logo">
+              <img
+                src="img/logo-sma-1-01.svg"
+                class="logo"
+                alt="Logo SMAN 1 Baturiti"
+              />
+            </a>
+            <p class="footer-logo-text">SMAN 1 Baturiti</p>
+          </div>
+
+          <div class="address-col">
+            <p class="footer-heading first-row">Hubungi</p>
+            <div class="first-row-content">
+              <address class="contacts">
+                <ion-icon
+                  name="location-outline"
+                  class="social-icon"
+                ></ion-icon>
+                <a
+                  href="https://www.google.com/maps/place/SMA+N+1+Baturiti/@-8.4203974,115.1932286,17z/data=!4m16!1m9!3m8!1s0x2dd223f0c719357d:0xfaae142275c390d2!2sSMA+N+1+Baturiti!8m2!3d-8.4203974!4d115.1958035!9m1!1b1!16s%2Fg%2F11bwc0r543!3m5!1s0x2dd223f0c719357d:0xfaae142275c390d2!8m2!3d-8.4203974!4d115.1958035!16s%2Fg%2F11bwc0r543?entry=ttu"
+                  class="footer-link"
+                >
+                  Br. Puseh, Ds. Perean, Baturiti, Tabanan, Bali.
+                </a>
+              </address>
+            </div>
+            <div class="first-row-content">
+              <div class="phone">
+                <ion-icon name="call-outline" class="social-icon"></ion-icon>
+                <a class="footer-link" href="tel:(0368) 2301064"
+                  >(0368) 2301064</a
+                >
+              </div>
+            </div>
+
+            <div class="first-row-content">
+              <div class="email-address">
+                <ion-icon name="mail-outline" class="social-icon"></ion-icon>
+                <a class="footer-link" href="mailto:sman1baturiti@gmail.com"
+                  >sman1baturiti@gmail.com</a
+                >
+              </div>
             </div>
           </div>
+
+          <div class="others-col">
+            <p class="footer-heading">Lainnya</p>
+            <div>
+              <ul class="others">
+                <li class="other-content">
+                  <a class="footer-nav" href="#hero">Profil</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="staff.html">Staff</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="student.html">Siswa</a>
+                </li>
+
+                <li class="other-content">
+                  <a class="footer-nav" href="#">Kegiatan</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="#">Seremoni</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="#news">Berita</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="contact.html">Kontak</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="open-day-col">
+            <p class="footer-heading">Jam buka</p>
+
+            <div class="day-content">
+              <p class="day-name">Senin-Jumat</p>
+              <span class="time">7.00 am - 15.30 pm</span>
+            </div>
+
+            <div class="day-content">
+              <p class="day-name">Sabtu-Minggu</p>
+              <span class="time">Tutup</span>
+            </div>
+          </div>
+
+          <div class="social-col">
+            <p class="footer-heading">Ikuti kami</p>
+            <ul class="social-links">
+              <li class="social-list">
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+                <a href="#" class="footer-link" target="_blank">Instagram</a>
+              </li>
+              <li class="social-list">
+                <a
+                  class="footer-link"
+                  href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
+                  target="_blank"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+                <a
+                  href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
+                  class="footer-link"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="social-list">
+                <a
+                  class="footer-link"
+                  href="https://www.youtube.com/@wartasmerti"
+                  target="_blank"
+                  ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
+                ></a>
+                <a
+                  href="https://www.youtube.com/@wartasmerti"
+                  class="footer-link"
+                  target="_blank"
+                  >YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+
+      <div class="tiny-footer">
+        <div class="container">
+          <div class="row">
+            <p>
+              &copy; <span class="year">2019</span> SMAN 1 Baturiti. All Right
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

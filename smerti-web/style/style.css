@@ -136,10 +136,10 @@ body {
   height: auto;
   background-image: linear-gradient(
       to right top,
-      rgba(0, 0, 0, 0.303),
+      rgba(0, 0, 0, 0.504),
       rgba(57, 79, 126, 0.4)
     ),
-    url(../img/siswa-1.jpg);
+    url(../img/guru-salam.JPG);
   background-size: cover;
   background-position: center;
   margin-right: 0;
