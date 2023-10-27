@@ -1,7 +1,75 @@
-.section-cta {
-  padding: 4.8rem 0 12.8rem;
+.contact {
+  padding: 9.6rem 0;
+  display: flex;
+  gap: 2.4rem;
 }
 
-.cta {
-  padding: 9.6rem 0;
+.contact-box-text {
+  padding: 3.6rem;
+  background-color: #fff;
+
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+}
+
+.contact-header {
+  text-align: left;
+  padding: 2.4rem;
+  font-size: 2.4rem;
+}
+
+.contact-warp {
+  display: flex;
+}
+
+.contact-message {
+  font-size: 1.6rem;
+  padding: 1.2rem;
+}
+
+.contact-box-info {
+  background-color: #8d96ac;
+  padding: 3.6rem;
+}
+
+.form-contact input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-contact {
+  padding: 3.6rem 0;
+}
+
+.btn--form {
+  background-color: #d61d39;
+  color: #fdf2e9;
+  align-items: center;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+}
+
+.text-contact {
+  padding: 2.4rem;
+}
+
+/* mengubah value footer-link untuk di page kontak */
+.footer-link {
+  font-size: 1.8rem;
+}
+
+.social-icon {
+  /* width: 3.6rem; */
+  width: 4.8rem;
+  height: 3.6rem;
+}
+
+.open-hour {
+  border-top: 1px solid #000;
 }

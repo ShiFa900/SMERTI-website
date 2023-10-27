@@ -30,7 +30,8 @@
 
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/general.css" />
-    <link rel="teacher-section" href="staff.html" />
+    <link rel="stylesheet" href="queries/home-query.css" />
+    <!-- <link rel="teacher-section" href="staff.html" /> -->
 
     <title>SMAN 1 Baturiti</title>
   </head>
@@ -38,16 +39,25 @@
   <body>
     <header class="header" id="home">
       <!-- logo smerti dan navigasi -->
-      <a href="#home">
+      <!-- <a href="#home">
         <img
           class="logo"
           alt="Logo SMAN 1 Baturiti"
           src="img/logo-sma-1-01.svg"
         />
-      </a>
+      </a> -->
 
       <nav class="main-nav">
         <ul class="main-nav-list">
+          <li>
+            <a href="#home">
+              <img
+                class="logo"
+                alt="Logo SMAN 1 Baturiti"
+                src="img/logo-sma-1-01.svg"
+              />
+            </a>
+          </li>
           <li><a class="main-nav-link" href="#profil">Profil</a></li>
           <!-- dibuat dropdown -->
           <div class="dropdown">
@@ -107,10 +117,15 @@
 
           <div class="container grid grid--3-cols">
             <div class="profile-warp">
-              <ion-icon name="location-outline" class="profile-icon"></ion-icon>
-              <h3 class="heading-third heading-third-profile">
-                Alamat sekolah
-              </h3>
+              <div class="header-icon">
+                <ion-icon
+                  name="location-outline"
+                  class="profile-icon"
+                ></ion-icon>
+                <h3 class="heading-third heading-third-profile">
+                  Alamat sekolah
+                </h3>
+              </div>
               <!-- foto sekolah -->
               <p class="profil-description">
                 SMA Negeri 1 Baturiti atau sering kami sebut dengan SMERTI
@@ -126,8 +141,10 @@
             </div>
 
             <div class="profile-warp">
-              <ion-icon name="bulb-outline" class="profile-icon"></ion-icon>
-              <h3 class="heading-third heading-third-profile">Visi & Misi</h3>
+              <div class="header-icon">
+                <ion-icon name="bulb-outline" class="profile-icon"></ion-icon>
+                <h3 class="heading-third heading-third-profile">Visi & Misi</h3>
+              </div>
               <p class="profil-description">
                 Mencetak lulusan yang memiliki sikap beriman, berbudaya, cerdas
                 dan berprestasi. Meningkatkan kemampuan siswa pada bidang
@@ -136,8 +153,10 @@
             </div>
 
             <div class="profile-warp">
-              <ion-icon name="locate-outline" class="profile-icon"></ion-icon>
-              <h3 class="heading-third heading-third-profile">Tujuan</h3>
+              <div class="header-icon">
+                <ion-icon name="locate-outline" class="profile-icon"></ion-icon>
+                <h3 class="heading-third heading-third-profile">Tujuan</h3>
+              </div>
               <p class="profil-description">
                 Lorem ipsum dolor sit amet <strong>A</strong> elit. Error
                 Deserunt recusandae corporis laborum voluptatum consequatur
@@ -146,35 +165,43 @@
             </div>
 
             <div class="profile-warp">
-              <ion-icon name="ribbon-outline" class="profile-icon"></ion-icon>
-              <h3 class="heading-third heading-third-profile">Akreditasi</h3>
+              <div class="header-icon">
+                <ion-icon name="ribbon-outline" class="profile-icon"></ion-icon>
+                <h3 class="heading-third heading-third-profile">Akreditasi</h3>
+              </div>
               <p class="profil-description">
                 Lorem ipsum dolor sit amet <strong>A</strong> elit. Error
                 Deserunt recusandae corporis laborum voluptatum consequatur
-                neque mollitia, dolor nostrum eius eum voluptatibus.
+                neque mollitia, dolor voluptatibus.
               </p>
             </div>
 
             <div class="profile-warp">
-              <ion-icon name="book-outline" class="profile-icon"></ion-icon>
-              <h3 class="heading-third heading-third-profile">Kurikulum</h3>
+              <div class="header-icon">
+                <ion-icon name="book-outline" class="profile-icon"></ion-icon>
+                <h3 class="heading-third heading-third-profile">Kurikulum</h3>
+              </div>
               <p class="profil-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                repellendus cumque consectetur optio atque dicta similique
-                reiciendis pariatur. Hic amet culpa debitis.
+                repellendus cumque consectetur reiciendis pariatur. Hic amet
+                culpa debitis.
               </p>
             </div>
 
             <div class="profile-warp">
-              <ion-icon
-                name="document-text-outline"
-                class="profile-icon"
-              ></ion-icon>
-              <h3 class="heading-third heading-third-profile">Program kerja</h3>
+              <div class="header-icon">
+                <ion-icon
+                  name="document-text-outline"
+                  class="profile-icon"
+                ></ion-icon>
+                <h3 class="heading-third heading-third-profile">
+                  Program kerja
+                </h3>
+              </div>
               <p class="profil-description">
                 Lorem ipsum dolor sit amet, fugit voluptatibus illum eligendi
                 aspernatur eos. Voluptas esse, maxime accusantium dolore
-                adipisci impedit quo magnam doloribus.
+                adipisci.
               </p>
             </div>
           </div>

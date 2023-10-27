@@ -25,31 +25,42 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/general.css" />
     <link rel="stylesheet" href="style/staff-style.css" />
+    <link rel="stylesheet" href="queries/staff-query.css" />
 
     <!-- Name on new tab -->
     <title>SMAN 1 Baturiti &mdash; Guru</title>
   </head>
 
   <body>
-    <header class="header">
-      <a href="index.html">
+    <header class="header" id="home">
+      <!-- logo smerti dan navigasi -->
+      <!-- <a href="#home">
         <img
+          class="logo"
           alt="Logo SMAN 1 Baturiti"
           src="img/logo-sma-1-01.svg"
-          class="logo"
         />
-      </a>
+      </a> -->
 
-      <!-- buat dalam menu list nnti -->
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="index.html">Profil</a></li>
+          <li>
+            <a href="#home">
+              <img
+                class="logo"
+                alt="Logo SMAN 1 Baturiti"
+                src="img/logo-sma-1-01.svg"
+              />
+            </a>
+          </li>
+          <li><a class="main-nav-link" href="#profil">Profil</a></li>
           <!-- dibuat dropdown -->
           <div class="dropdown">
             <li>
               <button class="main-nav-link dropdown-btn">Akademik</button>
             </li>
             <div class="dropdown-content">
+              <!-- staff berisi daftar guru dan pegawai -->
               <a href="staff.html">Staff</a>
               <a href="student.html">Siswa</a>
             </div>
@@ -64,7 +75,7 @@
               <a href="#">Ekstrakurikuler</a>
             </div>
           </div>
-          <li><a class="main-nav-link" href="index.html/#news">Berita</a></li>
+          <li><a class="main-nav-link" href="#news">Berita</a></li>
 
           <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
           <li>
