@@ -130,6 +130,10 @@
   row-gap: 1.6rem;
 }
 
+.gallery-container{
+  padding: 0 1.6rem;
+}
+
 .gallery-item {
   overflow: hidden;
 }

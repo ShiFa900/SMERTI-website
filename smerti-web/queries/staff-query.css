@@ -23,6 +23,10 @@
   .container{
     max-width: 768px;
   }
+
+  .staff-hero{
+    width: auto;
+  }
   .hero-text-box {
     /* width: 768px; */
   }
@@ -57,6 +61,15 @@
   .heading-info{
     text-align: center;
     padding-top: 2.4rem;
+  }
+
+  .gallery{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .info-warp{
+    justify-content: center;
+    align-items: center;
   }
 }
 
