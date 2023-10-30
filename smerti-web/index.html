@@ -38,26 +38,15 @@
 
   <body>
     <header class="header" id="home">
-      <!-- logo smerti dan navigasi -->
-      <!-- <a href="#home">
+      <a href="#home" class="nav-logo">
         <img
           class="logo"
           alt="Logo SMAN 1 Baturiti"
           src="img/logo-sma-1-01.svg"
         />
-      </a> -->
-
+      </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li>
-            <a href="#home">
-              <img
-                class="logo"
-                alt="Logo SMAN 1 Baturiti"
-                src="img/logo-sma-1-01.svg"
-              />
-            </a>
-          </li>
           <li><a class="main-nav-link" href="#profil">Profil</a></li>
           <!-- dibuat dropdown -->
           <div class="dropdown">
@@ -90,6 +79,11 @@
           </li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -209,12 +203,12 @@
       </section>
 
       <section class="section-news" id="news">
-        <div class="container news">
+        <div class="news">
           <div class="latest-news-header">
             <h2 class="heading-second">Berita utama</h2>
           </div>
 
-          <div class="container grid grid--2-cols">
+          <div class="container grid grid--3-cols">
             <div class="latest-news-content">
               <a
                 href="https://www.youtube.com/watch?v=p0vDJnB0ji4"
@@ -376,7 +370,7 @@
       <div class="footer">
         <div class="container grid grid--footer">
           <div class="logo-col">
-            <a href="#hero" class="footer-logo">
+            <a href="#home" class="footer-logo">
               <img
                 src="img/logo-sma-1-01.svg"
                 class="logo"

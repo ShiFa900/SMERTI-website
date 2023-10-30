@@ -1,328 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Connecting html file with css file -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/staff-style.css" />
+    <link rel="stylesheet" href="queries/staff-query.css" />
 
-  <!-- Connecting html file with css file -->
-  <link rel="stylesheet" href="style/style.css" />
-  <link rel="stylesheet" href="style/general.css" />
-  <link rel="stylesheet" href="style/staff-style.css" />
-  <link rel="stylesheet" href="queries/staff-query.css" />
+    <!-- Name on new tab -->
+    <title>SMAN 1 Baturiti &mdash; Guru</title>
+  </head>
 
-  <!-- Name on new tab -->
-  <title>SMAN 1 Baturiti &mdash; Guru</title>
-</head>
-
-<body>
-  <header class="header" id="home">
-    <!-- logo smerti dan navigasi -->
-    <!-- <a href="#home">
+  <body>
+    <header class="header" id="home">
+      <!-- logo smerti dan navigasi -->
+      <a href="#home" class="nav-logo">
         <img
           class="logo"
           alt="Logo SMAN 1 Baturiti"
           src="img/logo-sma-1-01.svg"
         />
-      </a> -->
+      </a>
 
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li>
-          <a href="#home">
-            <img class="logo" alt="Logo SMAN 1 Baturiti" src="img/logo-sma-1-01.svg" />
-          </a>
-        </li>
-        <li><a class="main-nav-link" href="#profil">Profil</a></li>
-        <!-- dibuat dropdown -->
-        <div class="dropdown">
-          <li>
-            <button class="main-nav-link dropdown-btn">Akademik</button>
-          </li>
-          <div class="dropdown-content">
-            <!-- staff berisi daftar guru dan pegawai -->
-            <a href="staff.html">Staff</a>
-            <a href="student.html">Siswa</a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Profil</a></li>
+          <!-- dibuat dropdown -->
+          <div class="dropdown">
+            <li>
+              <button class="main-nav-link dropdown-btn">Akademik</button>
+            </li>
+            <div class="dropdown-content">
+              <!-- staff berisi daftar guru dan pegawai -->
+              <a href="staff.html">Staff</a>
+              <a href="student.html">Siswa</a>
+            </div>
           </div>
-        </div>
-        <div class="dropdown">
-          <li>
-            <button class="main-nav-link dropdown-btn">Kegiatan</button>
-          </li>
-          <div class="dropdown-content">
-            <a href="#">Lomba</a>
-            <a href="#">Seremoni</a>
-            <a href="#">Ekstrakurikuler</a>
+          <div class="dropdown">
+            <li>
+              <button class="main-nav-link dropdown-btn">Kegiatan</button>
+            </li>
+            <div class="dropdown-content">
+              <a href="#">Lomba</a>
+              <a href="#">Seremoni</a>
+              <a href="#">Ekstrakurikuler</a>
+            </div>
           </div>
+          <li><a class="main-nav-link" href="#news">Berita</a></li>
+
+          <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
+          <li>
+            <a class="main-nav-link main-nav-tuition" href="contact.html"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-staff-hero">
+        <div class="staff-hero">
+          <div class="hero-text-box container">
+            <h1 class="heading-first heading-first-hero">
+              Meningkatkan Prestasi dalam 34 Tahun Mengabdi
+            </h1>
+            <p class="hero-description">"Maju Bersama Sukses Semua"</p>
+          </div>
+          <div role="img" aria-label="SMAN 1 Baturiti" class="hero-img"></div>
         </div>
-        <li><a class="main-nav-link" href="#news">Berita</a></li>
+      </section>
 
-        <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
-        <li>
-          <a class="main-nav-link main-nav-tuition" href="contact.html">Kontak</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="section-staff-hero">
-      <div class="staff-hero">
-        <div class="hero-text-box container">
-          <h1 class="heading-first heading-first-hero">
-            Meningkatkan Prestasi dalam 34 Tahun Mengabdi
-          </h1>
-          <p class="hero-description">"Maju Bersama Sukses Semua"</p>
-        </div>
-        <div role="img" aria-label="SMAN 1 Baturiti" class="hero-img"></div>
-      </div>
-    </section>
-
-    <section class="section-staff">
-      <div class="staff container">
-        <!-- <div class="teacher-heading container">
+      <section class="section-staff">
+        <div class="staff container">
+          <!-- <div class="teacher-heading container">
           <h2 class="heading-second">Kepala sekolah</h2>
           </div> -->
-        <div class="teacher-heading">
-          <h2 class="heading-second">Kepala Sekolah</h2>
-        </div>
-        <div class="head-master">
-          <img src="img/bpk-kepala.JPG" alt="Kepala sekolah SMAN 1 Baturiti" class="teacher-img teacher-img-top" />
-
-          <div class="teacher-description">
-            <div class="heading-info">
-              <h3 class="heading-third">Drs. I Wayan Wardana Yasa.,M.Pd</h3>
-              <p class="teacher-title">Kepala sekolah SMAN 1 Baturiti.</p>
-            </div>
-
-            <div class="teacher-text-box">
-              <p class="teacher-text">
-                Drs. I Wayan Wardana Yasa.,M.Pd lahir di Kuwum, pada 27 Juli
-                1967. Beliau menjabat sebagai kepala sekolah di SMAN 1 Baturiti
-                sejak 2021 lalu. Selain menjabat sebagai kepala sekolah, beliu
-                juga turut serta menjadi pembina dalam OSN di bidang Biologi.
-              </p>
-              <blockquote class="teacher-quote">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                repellat at, nesciunt quia cum minima ipsum culpa totam sapiente
-                recusandae earum debitis doloribus in quasi voluptatibus!"
-              </blockquote>
-            </div>
+          <div class="teacher-heading">
+            <h2 class="heading-second">Kepala Sekolah</h2>
           </div>
-        </div>
-      </div>
-    </section>
+          <div class="head-master">
+            <img
+              src="img/bpk-kepala.JPG"
+              alt="Kepala sekolah SMAN 1 Baturiti"
+              class="teacher-img teacher-img-top"
+            />
 
-    <section class="info-section">
-      <div class="info grid grid--3-cols container">
-        <div class="info-warp">
-          <p class="info-number">24</p>
-          <div class="info-icon-head">
-            <ion-icon name="people-outline" class="profile-icon profile-icon-info"></ion-icon>
-            <h3 class="heading-third heading-third-info">
-              Tenaga Kependidikan
-            </h3>
-          </div>
-          <!-- deskripsinyaa -->
-          <p class="info-description">
-            Tenaga kependidikan profesional yang berjumlah 24 orang.
-            Diantaranya 4 orang ASN dan 20 orang Non-ASN.
-          </p>
-        </div>
-        <div class="info-warp">
-          <p class="info-number">45</p>
-          <div class="info-icon-head">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="profile-icon profile-icon-info">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-            </svg>
+            <div class="teacher-description">
+              <div class="heading-info">
+                <h3 class="heading-third">Drs. I Wayan Wardana Yasa.,M.Pd</h3>
+                <p class="teacher-title">Kepala sekolah SMAN 1 Baturiti.</p>
+              </div>
 
-            <h3 class="heading-third heading-third-info">Tenaga Pendidik</h3>
-          </div>
-          <!-- deskripsinyaa -->
-          <p class="info-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit minima
-            ipsum culpa totam sapiente. Consequatur.
-          </p>
-        </div>
-        <div class="info-warp">
-          <p class="info-number">22</p>
-          <div class="info-icon-head">
-            <ion-icon name="book-outline" class="profile-icon profile-icon-info"></ion-icon>
-            <h3 class="heading-third heading-third-info">Mata Pelajaran</h3>
-          </div>
-          <!-- deskripsinyaa -->
-          <p class="info-description">
-            Mata pelajaran dibagi menjadi 2 bagian, yaitu mata pelajaran
-            Peminatan dan Lintas Minat.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-staff-gallery">
-      <div class="staff-gallery gallery-container">
-        <div class="teacher-heading">
-          <h2 class="heading-second">Galeri Guru dan Tenaga Kependidikan</h2>
-        </div>
-
-        <div class="gallery">
-          <figure class="gallery-item">
-            <img src="img/guru-1.jpg" alt="Guru SMAN 1 Baturiti menjadi juri untuk lomba Bulan Bahasa Bali" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/guru-2.jpg" alt="Guru SMAN 1 Baturiti" />
-          </figure>
-
-          <figure class="gallery-item">
-            <img src="img/sma-img.png" alt="Guru SMAN 1 Baturiti melakukan rapat dengan kepala sekolah" />
-          </figure>
-
-          <figure class="gallery-item">
-            <img src="img/guru-6.jpg" alt="Guru SMAN 1 Baturiti" />
-          </figure>
-
-          <figure class="gallery-item">
-            <img src="img/guru-5.jpg" alt="Kegiatan outbond bagi calon OSIS baru" />
-          </figure>
-
-          <figure class="gallery-item">
-            <img src="img/guru-lap.jpg" alt="Kegiatan foto bersama dalam rangka PEMBATIK tahun 2023" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/bersihan.jpg" alt="Kegiatan jalan santai dan melakukan pembersihan area sekitar" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="img/sma-img-8.png" alt="Acara rpaat dewan guru" />
-          </figure>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer">
-      <div class="container grid grid--footer">
-        <div class="logo-col">
-          <a href="#hero" class="footer-logo">
-            <img src="img/logo-sma-1-01.svg" class="logo" alt="Logo SMAN 1 Baturiti" />
-          </a>
-          <p class="footer-logo-text">SMAN 1 Baturiti</p>
-        </div>
-
-        <div class="address-col">
-          <p class="footer-heading first-row">Hubungi</p>
-          <div class="first-row-content">
-            <address class="contacts">
-              <ion-icon name="location-outline" class="social-icon"></ion-icon>
-              <a href="https://www.google.com/maps/place/SMA+N+1+Baturiti/@-8.4203974,115.1932286,17z/data=!4m16!1m9!3m8!1s0x2dd223f0c719357d:0xfaae142275c390d2!2sSMA+N+1+Baturiti!8m2!3d-8.4203974!4d115.1958035!9m1!1b1!16s%2Fg%2F11bwc0r543!3m5!1s0x2dd223f0c719357d:0xfaae142275c390d2!8m2!3d-8.4203974!4d115.1958035!16s%2Fg%2F11bwc0r543?entry=ttu"
-                class="footer-link">
-                Br. Puseh, Ds. Perean, Baturiti, Tabanan, Bali.
-              </a>
-            </address>
-          </div>
-          <div class="first-row-content">
-            <div class="phone">
-              <ion-icon name="call-outline" class="social-icon"></ion-icon>
-              <a class="footer-link" href="tel:(0368) 2301064">(0368) 2301064</a>
-            </div>
-          </div>
-
-          <div class="first-row-content">
-            <div class="email-address">
-              <ion-icon name="mail-outline" class="social-icon"></ion-icon>
-              <a class="footer-link" href="mailto:sman1baturiti@gmail.com">sman1baturiti@gmail.com</a>
+              <div class="teacher-text-box">
+                <p class="teacher-text">
+                  Drs. I Wayan Wardana Yasa.,M.Pd lahir di Kuwum, pada 27 Juli
+                  1967. Beliau menjabat sebagai kepala sekolah di SMAN 1
+                  Baturiti sejak 2021 lalu. Selain menjabat sebagai kepala
+                  sekolah, beliu juga turut serta menjadi pembina dalam OSN di
+                  bidang Biologi.
+                </p>
+                <blockquote class="teacher-quote">
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolor repellat at, nesciunt quia cum minima ipsum culpa totam
+                  sapiente recusandae earum debitis doloribus in quasi
+                  voluptatibus!"
+                </blockquote>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="others-col">
-          <p class="footer-heading">Lainnya</p>
-          <div>
-            <ul class="others">
-              <li class="other-content">
-                <a class="footer-nav" href="#hero">Profil</a>
-              </li>
-              <li class="other-content">
-                <a class="footer-nav" href="staff.html">Staff</a>
-              </li>
-              <li class="other-content">
-                <a class="footer-nav" href="student.html">Siswa</a>
-              </li>
+      <section class="info-section">
+        <div class="info grid grid--3-cols container">
+          <div class="info-warp">
+            <p class="info-number">24</p>
+            <div class="info-icon-head">
+              <ion-icon
+                name="people-outline"
+                class="profile-icon profile-icon-info"
+              ></ion-icon>
+              <h3 class="heading-third heading-third-info">
+                Tenaga Kependidikan
+              </h3>
+            </div>
+            <!-- deskripsinyaa -->
+            <p class="info-description">
+              Tenaga kependidikan profesional yang berjumlah 24 orang.
+              Diantaranya 4 orang ASN dan 20 orang Non-ASN.
+            </p>
+          </div>
+          <div class="info-warp">
+            <p class="info-number">45</p>
+            <div class="info-icon-head">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="profile-icon profile-icon-info"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                />
+              </svg>
 
-              <li class="other-content">
-                <a class="footer-nav" href="#">Kegiatan</a>
+              <h3 class="heading-third heading-third-info">Tenaga Pendidik</h3>
+            </div>
+            <!-- deskripsinyaa -->
+            <p class="info-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit minima
+              ipsum culpa totam sapiente.
+            </p>
+          </div>
+          <div class="info-warp last-child">
+            <p class="info-number">22</p>
+            <div class="info-icon-head">
+              <ion-icon
+                name="book-outline"
+                class="profile-icon profile-icon-info"
+              ></ion-icon>
+              <h3 class="heading-third heading-third-info">Mata Pelajaran</h3>
+            </div>
+            <!-- deskripsinyaa -->
+            <p class="info-description">
+              Mata pelajaran dibagi menjadi 2 bagian, yaitu mata pelajaran
+              Peminatan dan Lintas Minat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-staff-gallery">
+        <div class="staff-gallery gallery-container">
+          <div class="teacher-heading">
+            <h2 class="heading-second">Galeri Guru dan Tenaga Kependidikan</h2>
+          </div>
+
+          <div class="gallery container">
+            <figure class="gallery-item">
+              <img
+                src="img/guru-1.jpg"
+                alt="Guru SMAN 1 Baturiti menjadi juri untuk lomba Bulan Bahasa Bali"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img src="img/guru-2.jpg" alt="Guru SMAN 1 Baturiti" />
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="img/sma-img.png"
+                alt="Guru SMAN 1 Baturiti melakukan rapat dengan kepala sekolah"
+              />
+            </figure>
+
+            <figure class="gallery-item">
+              <img src="img/guru-6.jpg" alt="Guru SMAN 1 Baturiti" />
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="img/guru-5.jpg"
+                alt="Kegiatan outbond bagi calon OSIS baru"
+              />
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="img/guru-lap.jpg"
+                alt="Kegiatan foto bersama dalam rangka PEMBATIK tahun 2023"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/bersihan.jpg"
+                alt="Kegiatan jalan santai dan melakukan pembersihan area sekitar"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img src="img/sma-img-8.png" alt="Acara rpaat dewan guru" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="#hero" class="footer-logo">
+              <img
+                src="img/logo-sma-1-01.svg"
+                class="logo"
+                alt="Logo SMAN 1 Baturiti"
+              />
+            </a>
+            <p class="footer-logo-text">SMAN 1 Baturiti</p>
+          </div>
+
+          <div class="address-col">
+            <p class="footer-heading first-row">Hubungi</p>
+            <div class="first-row-content">
+              <address class="contacts">
+                <ion-icon
+                  name="location-outline"
+                  class="social-icon"
+                ></ion-icon>
+                <a
+                  href="https://www.google.com/maps/place/SMA+N+1+Baturiti/@-8.4203974,115.1932286,17z/data=!4m16!1m9!3m8!1s0x2dd223f0c719357d:0xfaae142275c390d2!2sSMA+N+1+Baturiti!8m2!3d-8.4203974!4d115.1958035!9m1!1b1!16s%2Fg%2F11bwc0r543!3m5!1s0x2dd223f0c719357d:0xfaae142275c390d2!8m2!3d-8.4203974!4d115.1958035!16s%2Fg%2F11bwc0r543?entry=ttu"
+                  class="footer-link"
+                >
+                  Br. Puseh, Ds. Perean, Baturiti, Tabanan, Bali.
+                </a>
+              </address>
+            </div>
+            <div class="first-row-content">
+              <div class="phone">
+                <ion-icon name="call-outline" class="social-icon"></ion-icon>
+                <a class="footer-link" href="tel:(0368) 2301064"
+                  >(0368) 2301064</a
+                >
+              </div>
+            </div>
+
+            <div class="first-row-content">
+              <div class="email-address">
+                <ion-icon name="mail-outline" class="social-icon"></ion-icon>
+                <a class="footer-link" href="mailto:sman1baturiti@gmail.com"
+                  >sman1baturiti@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="others-col">
+            <p class="footer-heading">Lainnya</p>
+            <div>
+              <ul class="others">
+                <li class="other-content">
+                  <a class="footer-nav" href="index.html">Profil</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="staff.html">Staff</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="student.html">Siswa</a>
+                </li>
+
+                <li class="other-content">
+                  <a class="footer-nav" href="#">Kegiatan</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="#">Seremoni</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="#news">Berita</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="contact.html">Kontak</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="open-day-col">
+            <p class="footer-heading">Jam buka</p>
+
+            <div class="day-content">
+              <p class="day-name">Senin-Jumat</p>
+              <span class="time">7.00 am - 15.30 pm</span>
+            </div>
+
+            <div class="day-content">
+              <p class="day-name">Sabtu-Minggu</p>
+              <span class="time">Tutup</span>
+            </div>
+          </div>
+
+          <div class="social-col">
+            <p class="footer-heading">Ikuti kami</p>
+            <ul class="social-links">
+              <li class="social-list">
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+                <a href="#" class="footer-link" target="_blank">Instagram</a>
               </li>
-              <li class="other-content">
-                <a class="footer-nav" href="#">Seremoni</a>
+              <li class="social-list">
+                <a
+                  class="footer-link"
+                  href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
+                  target="_blank"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+                <a
+                  href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
+                  class="footer-link"
+                  target="_blank"
+                  >Facebook</a
+                >
               </li>
-              <li class="other-content">
-                <a class="footer-nav" href="#news">Berita</a>
-              </li>
-              <li class="other-content">
-                <a class="footer-nav" href="contact.html">Kontak</a>
+              <li class="social-list">
+                <a
+                  class="footer-link"
+                  href="https://www.youtube.com/@wartasmerti"
+                  target="_blank"
+                  ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
+                ></a>
+                <a
+                  href="https://www.youtube.com/@wartasmerti"
+                  class="footer-link"
+                  target="_blank"
+                  >YouTube</a
+                >
               </li>
             </ul>
           </div>
         </div>
+      </div>
 
-        <div class="open-day-col">
-          <p class="footer-heading">Jam buka</p>
-
-          <div class="day-content">
-            <p class="day-name">Senin-Jumat</p>
-            <span class="time">7.00 am - 15.30 pm</span>
-          </div>
-
-          <div class="day-content">
-            <p class="day-name">Sabtu-Minggu</p>
-            <span class="time">Tutup</span>
+      <div class="tiny-footer">
+        <div class="container">
+          <div class="row">
+            <p>
+              &copy; <span class="year">2019</span> SMAN 1 Baturiti. All Right
+              Reserved.
+            </p>
           </div>
         </div>
-
-        <div class="social-col">
-          <p class="footer-heading">Ikuti kami</p>
-          <ul class="social-links">
-            <li class="social-list">
-              <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
-              <a href="#" class="footer-link" target="_blank">Instagram</a>
-            </li>
-            <li class="social-list">
-              <a class="footer-link" href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
-                target="_blank"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
-              <a href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/" class="footer-link"
-                target="_blank">Facebook</a>
-            </li>
-            <li class="social-list">
-              <a class="footer-link" href="https://www.youtube.com/@wartasmerti" target="_blank"><ion-icon
-                  class="social-icon" name="logo-youtube"></ion-icon></a>
-              <a href="https://www.youtube.com/@wartasmerti" class="footer-link" target="_blank">YouTube</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </div>
-
-    <div class="tiny-footer">
-      <div class="container">
-        <div class="row">
-          <p>
-            &copy; <span class="year">2019</span> SMAN 1 Baturiti. All Right
-            Reserved.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

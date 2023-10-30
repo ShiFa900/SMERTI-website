@@ -96,6 +96,10 @@
   font-weight: 600;
   color: #bac0cd;
   margin-bottom: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .info-description {
@@ -130,7 +134,7 @@
   row-gap: 1.6rem;
 }
 
-.gallery-container{
+.gallery-container {
   padding: 0 1.6rem;
 }
 

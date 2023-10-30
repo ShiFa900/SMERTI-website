@@ -69,7 +69,10 @@ body {
 
 .logo {
   height: 10.2rem;
-  display: block;
+}
+
+.nav-logo {
+  padding: 0 6.4rem 0 0;
 }
 
 .heading-second,
@@ -81,7 +84,7 @@ body {
 /* NAVIGATION */
 .main-nav-list {
   list-style: none;
-  display: flex;
+  /* display: flex; */
   gap: 6.4rem;
   cursor: pointer;
   align-items: center;
@@ -267,7 +270,7 @@ body {
 }
 
 .btn-news {
-  margin: 6.4rem 0;
+  margin: 3.2rem 0;
   text-align: center;
 }
 
@@ -328,13 +331,7 @@ body {
 
 .footer-logo .logo {
   height: 15.8rem;
-  padding-right: 0;
-}
-
-.logo-col {
-  border-right: 1px solid #999999;
-  align-items: center;
-  /* padding-right: 1.2rem; */
+  /* padding: 1.2rem; */
 }
 
 .footer-logo-text {
@@ -415,10 +412,6 @@ body {
 .day-content {
   font-size: 1.6rem;
   margin: 3.4rem 0;
-}
-
-.others-col {
-  padding-left: 2.4rem;
 }
 
 .others {
