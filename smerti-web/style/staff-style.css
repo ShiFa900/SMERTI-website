@@ -65,7 +65,7 @@
 .teacher-quote {
   font-style: italic;
   margin: 2.4rem 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.75;
   color: inherit;
 }
@@ -78,7 +78,7 @@
   line-height: 1.5;
   text-align: left;
   padding-left: 2.4rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   /* transform: translate(0, 20%); */
 }
 
@@ -103,7 +103,7 @@
 }
 
 .info-description {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.75;
 }
 
