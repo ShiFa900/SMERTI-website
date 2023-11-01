@@ -58,7 +58,7 @@ body {
   /* font-weight: 600; */
   align-items: center;
   /* height: 6.4rem; */
-  padding: 0 6.4rem;
+  padding: 0 3.4rem;
   position: relative;
   background-color: #fff;
 }
@@ -72,7 +72,7 @@ body {
 }
 
 .nav-logo {
-  padding: 0 6.4rem 0 0;
+  padding: 0 3.4rem 0 0;
 }
 
 .heading-second,

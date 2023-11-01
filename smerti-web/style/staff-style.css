@@ -29,6 +29,7 @@
 .section-staff {
   padding: 9.6rem 0;
   color: #1a2d59;
+  background-color: #fafafa;
 }
 
 /* Head Master */
@@ -94,12 +95,12 @@
 .info-number {
   font-size: 8.6rem;
   font-weight: 600;
-  color: #bac0cd;
+  color: #a3abbd;
   margin-bottom: 1.2rem;
 
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
 }
 
 .info-description {
@@ -125,6 +126,7 @@
 .section-staff-gallery {
   padding: 9.6rem 0;
   color: #1a2d59;
+  background-color: #fafafa;
 }
 
 .gallery {

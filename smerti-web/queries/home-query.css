@@ -54,11 +54,17 @@
   /* NAV - LOGO TEXT */
 
   .warp {
-    display: flex;
     align-items: center;
     font-family: "rubik";
 
     gap: 1.2rem;
+  }
+
+  .nav-logo-title,
+  .nav-logo-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .header a:link {
@@ -76,12 +82,25 @@
   }
 
   .nav-logo-des {
-    font-size: 1rem;
+    font-size: 62.5%;
     text-decoration: none;
     text-transform: uppercase;
 
     color: #1a2d59;
     font-weight: 500;
+  }
+
+  .header,
+  .nav-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.2rem;
+  }
+
+  .logo {
+    height: 8.4rem;
   }
 
   /* NEWS */
@@ -101,9 +120,13 @@
   }
 
   .icon-mobile-nav {
-    height: 4.8rem;
-    width: 4.8rem;
+    height: 3.6rem;
+    width: 3.6rem;
     color: #333;
+  }
+
+  .btn-mobile-nav {
+    display: block;
   }
 
   .main-nav {
@@ -113,11 +136,11 @@
     right: 0;
     width: 100%;
     height: 100vh;
-    /* transform: translateX(100%);
+    /* transform: translateX(100%); */
 
     display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
     transition: all 0.5s ease-in;
 
     /* Hide navigation */
@@ -131,14 +154,14 @@
     pointer-events: none;
 
     /* 3) Hide it from screen readers */
-    /* visibility: hidden; */
+    visibility: hidden;
   }
 
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    /* transform: translateX(0); */
+    transform: translateX(0);
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -149,32 +172,22 @@
     display: none;
   }
 
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
   /* FOOTER */
 
   .social-list {
     margin-top: 0;
     column-gap: 1.4rem;
   }
-}
-
-@media (max-width: 44em) {
-  .heading-first {
-    font: 4.8rem;
-  }
-
-  /* .hero-description {
-    font-size: 1.6rem;
-  } */
-
-  .hero-text-box {
-    font-size: 1.4rem;
-  }
-
-  .grid--2-cols,
-  .grid--3-cols {
-    grid-template-columns: 1fr;
-  }
-
   .grid--footer {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -193,6 +206,21 @@
   .open-day-col,
   .social-col {
     grid-column: span 2;
+  }
+}
+
+@media (max-width: 44em) {
+  .heading-first {
+    font: 4.8rem;
+  }
+
+  .hero-text-box {
+    font-size: 1.4rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
   }
 }
 
