@@ -42,14 +42,16 @@ shade:
 /*====================*/
 
 .dropdown-btn {
-  /* font-family: "rubik", sans-serif; */
-  background-color: #fff;
+  font-family: inherit;
+  /* background-color: #fff; */
   color: #1a2d59;
   /* padding: 0.7rem 1rem; */
   font-size: 2.4rem;
   font-weight: 600;
   border: none;
   cursor: pointer;
+  border: none;
+  background: none;
 }
 
 .dropdown-btn:hover,
@@ -93,7 +95,7 @@ shade:
 /*====================*/
 
 /* MOBILE */
-.mobile-nav {
+.btn-mobile-nav {
   border: none;
   background: none;
   cursor: pointer;

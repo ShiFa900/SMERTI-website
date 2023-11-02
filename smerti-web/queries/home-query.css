@@ -111,37 +111,26 @@
   }
 
   /* MOBILE */
-  .mobile-nav {
-    border: none;
-    background: none;
-    cursor: pointer;
-
-    display: none;
-  }
-
-  .icon-mobile-nav {
-    height: 3.6rem;
-    width: 3.6rem;
-    color: #333;
-  }
 
   .btn-mobile-nav {
     display: block;
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: rgba(26, 46, 91, 0.71);
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100vh;
+    z-index: 2;
     /* transform: translateX(100%); */
 
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
+    backdrop-filter: blur(5px);
 
     /* Hide navigation */
     /* Allows NO transitions at all */
@@ -155,6 +144,15 @@
 
     /* 3) Hide it from screen readers */
     visibility: hidden;
+  }
+
+  .main-nav .main-nav-link {
+    /* font-size: 2.4rem; */
+    color: #fff;
+  }
+
+  .dropdown-btn {
+    font-size: 3rem;
   }
 
   .nav-open .main-nav {
