@@ -29,21 +29,28 @@
     <link rel="stylesheet" href="queries/home-query.css" />
     <link rel="stylesheet" href="queries/staff-query.css" />
 
+    <script defer src="js/slide.js"></script>
+    <script defer src="js/script.js"></script>
+
     <!-- Name on new tab -->
     <title>SMAN 1 Baturiti &mdash; Guru</title>
   </head>
 
   <body>
-    <header class="header">
-      <a href="index.html" class="nav-logo">
+    <header class="header" id="home">
+      <a href="#home" class="nav-logo">
         <img
+          class="logo"
           alt="Logo SMAN 1 Baturiti"
           src="img/logo-sma-1-01.svg"
-          class="logo"
         />
+        <div class="warp">
+          <p class="nav-logo-title">SMAN 1 Baturiti</p>
+          <span class="nav-logo-des">
+            Lorem ipsum dolor sit amet consectetur</span
+          >
+        </div>
       </a>
-
-      <!-- buat dalam menu list nnti -->
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="index.html">Profil</a></li>
@@ -53,6 +60,7 @@
               <button class="main-nav-link dropdown-btn">Akademik</button>
             </li>
             <div class="dropdown-content">
+              <!-- staff berisi daftar guru dan pegawai -->
               <a href="staff.html">Staff</a>
               <a href="student.html">Siswa</a>
             </div>
@@ -67,7 +75,7 @@
               <a href="#">Ekstrakurikuler</a>
             </div>
           </div>
-          <li><a class="main-nav-link" href="index.html/#news">Berita</a></li>
+          <li><a class="main-nav-link" href="#">Berita</a></li>
 
           <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
           <li>
@@ -77,6 +85,7 @@
           </li>
         </ul>
       </nav>
+
       <button class="btn-mobile-nav">
         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
@@ -114,8 +123,10 @@
             />
 
             <div class="teacher-description">
-              <h3 class="heading-third">I Kadek Ari Antara</h3>
-              <p class="teacher-title">Ketua OSIS SMAN 1 Baturiti</p>
+              <div class="heading-info">
+                <h3 class="heading-third">I Kadek Ari Antara</h3>
+                <p class="teacher-title">Ketua OSIS SMAN 1 Baturiti</p>
+              </div>
 
               <p class="teacher-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -216,7 +227,7 @@
             <figure class="gallery-item">
               <img
                 src="img/siswa-yb.jpg"
-                alt="Guru SMAN 1 Baturiti melakukan rapat dengan kepala sekolah"
+                alt="Foto tahunan siswa-siswi SMERTI"
               />
             </figure>
 
@@ -226,7 +237,7 @@
 
             <figure class="gallery-item">
               <img
-                src="img/sembahyang-02.JPG"
+                src="img/info-img-5.jpg"
                 alt="Kegiatan foto bersama dalam rangka PEMBATIK tahun 2023"
               />
             </figure>

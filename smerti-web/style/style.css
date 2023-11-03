@@ -101,7 +101,7 @@ body {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #1a2d59;
   transition: all 0.3s;
 }
@@ -193,12 +193,10 @@ body {
 .section-profile {
   background-color: #fff;
   padding: 9.6rem 0;
-  z-index: 1;
 }
 
 .profile {
   color: #1a2d59;
-  position: relative;
 }
 
 .profile:last-child {

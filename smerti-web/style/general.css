@@ -18,7 +18,7 @@ shade:
 /* heading */
 .heading-first {
   line-height: 1.25;
-  font-size: 5.2rem;
+  font-size: 4.4rem;
 }
 
 .heading-second {
@@ -26,7 +26,7 @@ shade:
 }
 
 .heading-third {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 /* teks */
@@ -35,6 +35,10 @@ shade:
 .post-content-text {
   font-size: 1.8rem;
   line-height: 32px;
+}
+
+.main-nav-link {
+  text-transform: uppercase;
 }
 
 /*====================*/
@@ -46,7 +50,7 @@ shade:
   /* background-color: #fff; */
   color: #1a2d59;
   /* padding: 0.7rem 1rem; */
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -72,7 +76,7 @@ shade:
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   font-size: 2.4rem;
   font-weight: 500;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .dropdown-content a {
