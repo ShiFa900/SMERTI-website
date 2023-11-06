@@ -159,6 +159,10 @@
     color: #fff;
   }
 
+  .dropdown{
+    position:inherit;
+  }
+
   .dropdown-btn {
     font-size: 3rem;
   }
