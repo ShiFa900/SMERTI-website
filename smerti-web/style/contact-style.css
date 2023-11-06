@@ -1,34 +1,54 @@
+.header {
+  border-bottom: 5px solid #d61d39;
+}
+
+/* CONTACT SECTION */
 .contact {
   padding: 9.6rem 0;
-  display: flex;
-  gap: 2.4rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .contact-box-text {
   padding: 3.6rem;
   background-color: #fff;
+  border-radius: 5px;
 
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.111);
 }
 
 .contact-header {
-  text-align: left;
-  padding: 2.4rem;
+  /* padding: 2.4rem; */
   font-size: 2.4rem;
+}
+
+button {
+  margin: 2.4rem 0;
+}
+
+.info-icon,
+.info-name {
+  color: #1a2d59;
+  font-weight: 600;
 }
 
 .contact-warp {
   display: flex;
+  column-gap: 6.2rem;
 }
 
 .contact-message {
   font-size: 1.6rem;
-  padding: 1.2rem;
+  margin: 2.4rem 0;
+  line-height: 2;
 }
 
 .contact-box-info {
-  background-color: #8d96ac;
+  background-color: #bac0cd;
   padding: 3.6rem;
+  border-radius: 5px;
 }
 
 .form-contact input {
@@ -38,38 +58,24 @@
   font-family: inherit;
   color: inherit;
   border: none;
-  background-color: #fdf2e9;
+  background-color: #e1e1e1;
   border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.form-contact {
-  padding: 3.6rem 0;
 }
 
 .btn--form {
   background-color: #d61d39;
-  color: #fdf2e9;
-  align-items: center;
+  border: none;
+  border-radius: 3px;
+  color: #ffff;
   padding: 1.2rem 2.4rem;
   cursor: pointer;
 }
 
 .text-contact {
-  padding: 2.4rem;
+  padding: 2.8rem 0;
 }
 
-/* mengubah value footer-link untuk di page kontak */
-.footer-link {
-  font-size: 1.8rem;
-}
-
-.social-icon {
-  /* width: 3.6rem; */
-  width: 4.8rem;
-  height: 3.6rem;
-}
-
-.open-hour {
-  border-top: 1px solid #000;
+.contact-box-text *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(224, 224, 224, 0.377);
 }

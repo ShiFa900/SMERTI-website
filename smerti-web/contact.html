@@ -1,124 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Connecting html file with css file -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/staff-style.css" />
+    <link rel="stylesheet" href="style/student-style.css" />
+    <link rel="stylesheet" href="style/contact-style.css" />
 
-  <!-- Connecting html file with css file -->
-  <link rel="stylesheet" href="style/style.css" />
-  <link rel="stylesheet" href="style/general.css" />
-  <link rel="stylesheet" href="style/staff-style.css" />
-  <link rel="stylesheet" href="style/student-style.css" />
-  <link rel="stylesheet" href="style/contact-style.css" />
+    <link rel="stylesheet" href="queries/home-query.css" />
+    <link rel="stylesheet" href="queries/contact-query.css" />
 
-  <link rel="stylesheet" href="queries/home-query.css" />
+    <script defer src="js/script.js"></script>
 
+    <!-- Name on new tab -->
+    <title>SMAN 1 Baturiti &mdash; Kontak</title>
+  </head>
 
-  <script deref src="js/script.js"></script>
-
-  <!-- Name on new tab -->
-  <title>SMAN 1 Baturiti &mdash; Kontak</title>
-</head>
-
-<body>
-  <header class="header" id="home">
-    <a href="#home" class="nav-logo">
-      <img class="logo" alt="Logo SMAN 1 Baturiti" src="img/logo-sma-1-01.svg" />
-      <div class="warp">
-        <p class="nav-logo-title">SMAN 1 Baturiti</p>
-        <span class="nav-logo-des">
-          Lorem ipsum dolor sit amet consectetur</span>
-      </div>
-    </a>
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="index.html">Profil</a></li>
-        <!-- dibuat dropdown -->
-        <div class="dropdown">
-          <li>
-            <button class="main-nav-link dropdown-btn">Akademik</button>
-          </li>
-          <div class="dropdown-content">
-            <!-- staff berisi daftar guru dan pegawai -->
-            <a href="staff.html">Staff</a>
-            <a href="student.html">Siswa</a>
-          </div>
+  <body>
+    <header class="header" id="home">
+      <a href="index.html" class="nav-logo">
+        <img
+          class="logo"
+          alt="Logo SMAN 1 Baturiti"
+          src="img/logo-sma-1-01.svg"
+        />
+        <div class="warp">
+          <p class="nav-logo-title">SMAN 1 Baturiti</p>
+          <span class="nav-logo-des">
+            Lorem ipsum dolor sit amet consectetur</span
+          >
         </div>
-        <div class="dropdown">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Profil</a></li>
+          <!-- dibuat dropdown -->
+          <div class="dropdown">
+            <li>
+              <button class="main-nav-link dropdown-btn">Akademik</button>
+            </li>
+            <div class="dropdown-content">
+              <!-- staff berisi daftar guru dan pegawai -->
+              <a href="staff.html">Staff</a>
+              <a href="student.html">Siswa</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li>
+              <button class="main-nav-link dropdown-btn">Kegiatan</button>
+            </li>
+            <div class="dropdown-content">
+              <a href="#">Lomba</a>
+              <a href="#">Seremoni</a>
+              <a href="#">Ekstrakurikuler</a>
+            </div>
+          </div>
+          <li><a class="main-nav-link" href="#">Berita</a></li>
+
+          <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
           <li>
-            <button class="main-nav-link dropdown-btn">Kegiatan</button>
+            <a class="main-nav-link main-nav-tuition" href="contact.html"
+              >Kontak</a
+            >
           </li>
-          <div class="dropdown-content">
-            <a href="#">Lomba</a>
-            <a href="#">Seremoni</a>
-            <a href="#">Ekstrakurikuler</a>
-          </div>
-        </div>
-        <li><a class="main-nav-link" href="#">Berita</a></li>
+        </ul>
+      </nav>
 
-        <!-- <li><a class="main-nav-link" href="#">Fitur</a></li> -->
-        <li>
-          <a class="main-nav-link main-nav-tuition" href="contact.html">Kontak</a>
-        </li>
-      </ul>
-    </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-contact container">
+        <div class="contact">
+          <div class="contact-box-text">
+            <div class="row">
+              <h2 class="heading-second contact-header">Kirimkan kami pesan</h2>
+            </div>
+            <p class="contact-message">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ea
+              iure consequatur hic illo molestias ut officiis incidunt expedita
+              possimus laboriosam at!!
+            </p>
 
-    <button class="btn-mobile-nav">
-      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-    </button>
-  </header>
-  <main>
-    <section class="section-contact">
-      <div class="contact container">
-        <div class="contact-box-text">
-          <div class="row">
-            <h2 class="heading-second contact-header">Kirimi kami pesan</h2>
-          </div>
-          <p class="contact-message">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ea
-            iure consequatur hic illo molestias ut officiis incidunt expedita
-            possimus laboriosam at!!
-          </p>
+            <form class="form-contact" action="#">
+              <div class="contact-warp">
+                <div class="text-contact">
+                  <input
+                    id="full-name"
+                    class="form-control"
+                    type="text"
+                    placeholder="Nama"
+                    required
+                  />
+                </div>
 
-          <form class="form-contact" action="#">
-            <div class="contact-warp">
+                <div class="text-contact">
+                  <input
+                    id="email"
+                    class="form-control"
+                    type="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
               <div class="text-contact">
-                <input id="full-name" class="form-control" type="text" placeholder="Nama" required />
+                <input
+                  id="message"
+                  class="form-control"
+                  type="text"
+                  placeholder="Pesan"
+                  required
+                />
               </div>
 
-              <div class="text-contact">
-                <input id="email" class="form-control" type="email" placeholder="Email" required />
+              <button class="btn btn--form">Kirim</button>
+            </form>
+          </div>
+
+          <div class="contact-box-info">
+            <div class="row">
+              <h2 class="heading-second contact-header">Hubungi kami</h2>
+            </div>
+            <div class="contact-content">
+              <div>
+                <div class="first-row-content">
+                  <address class="contacts">
+                    <ion-icon
+                      name="location-outline"
+                      class="social-icon info-icon"
+                    ></ion-icon>
+                    <a
+                      href="https://www.google.com/maps/place/SMA+N+1+Baturiti/@-8.4203974,115.1932286,17z/data=!4m16!1m9!3m8!1s0x2dd223f0c719357d:0xfaae142275c390d2!2sSMA+N+1+Baturiti!8m2!3d-8.4203974!4d115.1958035!9m1!1b1!16s%2Fg%2F11bwc0r543!3m5!1s0x2dd223f0c719357d:0xfaae142275c390d2!8m2!3d-8.4203974!4d115.1958035!16s%2Fg%2F11bwc0r543?entry=ttu"
+                      class="footer-link"
+                    >
+                      Br. Puseh, Ds. Perean, Baturiti, Tabanan, Bali.
+                    </a>
+                  </address>
+                </div>
+                <div class="first-row-content">
+                  <div class="phone">
+                    <ion-icon
+                      name="call-outline"
+                      class="social-icon info-icon"
+                    ></ion-icon>
+                    <a class="footer-link" href="tel:(0368) 2301064"
+                      >(0368) 2301064</a
+                    >
+                  </div>
+                </div>
+                <div class="first-row-content">
+                  <div class="email-address">
+                    <ion-icon
+                      name="mail-outline"
+                      class="social-icon info-icon"
+                    ></ion-icon>
+                    <a class="footer-link" href="mailto:sman1baturiti@gmail.com"
+                      >sman1baturiti@gmail.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="open-hour">
+                <div class="day-content">
+                  <p class="day-name info-name">Senin-Jumat</p>
+                  <span class="time">7.00 am - 15.30 pm</span>
+                </div>
+
+                <div class="day-content">
+                  <p class="day-name info-name">Sabtu-Minggu</p>
+                  <span class="time">Tutup</span>
+                </div>
               </div>
             </div>
-
-            <div class="text-contact">
-              <input id="message" class="form-control" type="text" placeholder="Pesan" required />
-            </div>
-
-            <button class="btn btn--form">Kirim</button>
-          </form>
-        </div>
-
-        <div class="contact-box-info">
-          <div class="row">
-            <h2 class="heading-second contact-header">Hubungi kami</h2>
           </div>
-          <div class="contact-content">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="#home" class="footer-logo">
+              <img
+                src="img/logo-sma-1-01.svg"
+                class="logo"
+                alt="Logo SMAN 1 Baturiti"
+              />
+              <span class="footer-logo-text">SMAN 1 Baturiti</span>
+            </a>
+          </div>
+
+          <div class="address-col">
+            <p class="footer-heading first-row">Hubungi</p>
             <div class="first-row-content">
               <address class="contacts">
-                <ion-icon name="location-outline" class="social-icon"></ion-icon>
-                <a href="https://www.google.com/maps/place/SMA+N+1+Baturiti/@-8.4203974,115.1932286,17z/data=!4m16!1m9!3m8!1s0x2dd223f0c719357d:0xfaae142275c390d2!2sSMA+N+1+Baturiti!8m2!3d-8.4203974!4d115.1958035!9m1!1b1!16s%2Fg%2F11bwc0r543!3m5!1s0x2dd223f0c719357d:0xfaae142275c390d2!8m2!3d-8.4203974!4d115.1958035!16s%2Fg%2F11bwc0r543?entry=ttu"
-                  class="footer-link">
+                <ion-icon
+                  name="location-outline"
+                  class="social-icon location-icon"
+                ></ion-icon>
+                <a
+                  href="https://www.google.com/maps/place/SMA+N+1+Baturiti/@-8.4203974,115.1932286,17z/data=!4m16!1m9!3m8!1s0x2dd223f0c719357d:0xfaae142275c390d2!2sSMA+N+1+Baturiti!8m2!3d-8.4203974!4d115.1958035!9m1!1b1!16s%2Fg%2F11bwc0r543!3m5!1s0x2dd223f0c719357d:0xfaae142275c390d2!8m2!3d-8.4203974!4d115.1958035!16s%2Fg%2F11bwc0r543?entry=ttu"
+                  class="footer-link"
+                >
                   Br. Puseh, Ds. Perean, Baturiti, Tabanan, Bali.
                 </a>
               </address>
@@ -126,18 +235,52 @@
             <div class="first-row-content">
               <div class="phone">
                 <ion-icon name="call-outline" class="social-icon"></ion-icon>
-                <a class="footer-link" href="tel:(0368) 2301064">(0368) 2301064</a>
+                <a class="footer-link" href="tel:(0368) 2301064"
+                  >(0368) 2301064</a
+                >
               </div>
             </div>
+
             <div class="first-row-content">
               <div class="email-address">
                 <ion-icon name="mail-outline" class="social-icon"></ion-icon>
-                <a class="footer-link" href="mailto:sman1baturiti@gmail.com">sman1baturiti@gmail.com</a>
+                <a class="footer-link" href="mailto:sman1baturiti@gmail.com"
+                  >sman1baturiti@gmail.com</a
+                >
               </div>
             </div>
           </div>
 
-          <div class="open-hour">
+          <div class="others-col">
+            <p class="footer-heading">Quick Links</p>
+            <div>
+              <ul class="others">
+                <li class="other-content">
+                  <a class="footer-nav" href="index.html">Profil Sekolah</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="staff.html">Staff dan Guru</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="student.html">Siswa</a>
+                </li>
+
+                <li class="other-content">
+                  <a class="footer-nav" href="#">Kegiatan</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="#news">Berita</a>
+                </li>
+                <li class="other-content">
+                  <a class="footer-nav" href="contact.html">Kontak</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="open-day-col">
+            <p class="footer-heading">Jam buka</p>
+
             <div class="day-content">
               <p class="day-name">Senin-Jumat</p>
               <span class="time">7.00 am - 15.30 pm</span>
@@ -148,125 +291,70 @@
               <span class="time">Tutup</span>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="footer">
-      <div class="container grid grid--footer">
-        <div class="logo-col">
-          <a href="#hero" class="footer-logo">
-            <img src="img/logo-sma-1-01.svg" class="logo" alt="Logo SMAN 1 Baturiti" />
-          </a>
-          <p class="footer-logo-text">SMAN 1 Baturiti</p>
-        </div>
-
-        <div class="address-col">
-          <p class="footer-heading first-row">Hubungi</p>
-          <div class="first-row-content">
-            <address class="contacts">
-              <ion-icon name="location-outline" class="social-icon"></ion-icon>
-              <a href="https://www.google.com/maps/place/SMA+N+1+Baturiti/@-8.4203974,115.1932286,17z/data=!4m16!1m9!3m8!1s0x2dd223f0c719357d:0xfaae142275c390d2!2sSMA+N+1+Baturiti!8m2!3d-8.4203974!4d115.1958035!9m1!1b1!16s%2Fg%2F11bwc0r543!3m5!1s0x2dd223f0c719357d:0xfaae142275c390d2!8m2!3d-8.4203974!4d115.1958035!16s%2Fg%2F11bwc0r543?entry=ttu"
-                class="footer-link">
-                Br. Puseh, Ds. Perean, Baturiti, Tabanan, Bali.
-              </a>
-            </address>
-          </div>
-          <div class="first-row-content">
-            <div class="phone">
-              <ion-icon name="call-outline" class="social-icon"></ion-icon>
-              <a class="footer-link" href="tel:(0368) 2301064">(0368) 2301064</a>
-            </div>
-          </div>
-
-          <div class="first-row-content">
-            <div class="email-address">
-              <ion-icon name="mail-outline" class="social-icon"></ion-icon>
-              <a class="footer-link" href="mailto:sman1baturiti@gmail.com">sman1baturiti@gmail.com</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="others-col">
-          <p class="footer-heading">Lainnya</p>
-          <div>
-            <ul class="others">
-              <li class="other-content">
-                <a class="footer-nav" href="index.html">Profil</a>
+          <div class="social-col">
+            <p class="footer-heading">Ikuti kami</p>
+            <ul class="social-links">
+              <li class="social-list">
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon footer-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+                <a href="#" class="footer-link" target="_blank"
+                  ><span class="ro-text">Instagram</span></a
+                >
               </li>
-              <li class="other-content">
-                <a class="footer-nav" href="staff.html">Staff</a>
+              <li class="social-list">
+                <a
+                  class="footer-link"
+                  href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
+                  target="_blank"
+                  ><ion-icon
+                    class="social-icon footer-icon"
+                    name="logo-facebook"
+                  ></ion-icon
+                ></a>
+                <a
+                  href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="ro-text">Facebook</span></a
+                >
               </li>
-              <li class="other-content">
-                <a class="footer-nav" href="student.html">Siswa</a>
-              </li>
-
-              <li class="other-content">
-                <a class="footer-nav" href="#">Kegiatan</a>
-              </li>
-              <li class="other-content">
-                <a class="footer-nav" href="#">Seremoni</a>
-              </li>
-              <li class="other-content">
-                <a class="footer-nav" href="#news">Berita</a>
-              </li>
-              <li class="other-content">
-                <a class="footer-nav" href="contact.html">Kontak</a>
+              <li class="social-list">
+                <a
+                  class="footer-link"
+                  href="https://www.youtube.com/@wartasmerti"
+                  target="_blank"
+                  ><ion-icon
+                    class="social-icon footer-icon"
+                    name="logo-youtube"
+                  ></ion-icon
+                ></a>
+                <a
+                  href="https://www.youtube.com/@wartasmerti"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="ro-text">YouTube</span></a
+                >
               </li>
             </ul>
           </div>
         </div>
+      </div>
 
-        <div class="open-day-col">
-          <p class="footer-heading">Jam buka</p>
-
-          <div class="day-content">
-            <p class="day-name">Senin-Jumat</p>
-            <span class="time">7.00 am - 15.30 pm</span>
-          </div>
-
-          <div class="day-content">
-            <p class="day-name">Sabtu-Minggu</p>
-            <span class="time">Tutup</span>
+      <div class="tiny-footer">
+        <div class="container">
+          <div class="row">
+            <p>
+              &copy; <span class="year">2019</span> SMAN 1 Baturiti. All Right
+              Reserved.
+            </p>
           </div>
         </div>
-
-        <div class="social-col">
-          <p class="footer-heading">Ikuti kami</p>
-          <ul class="social-links">
-            <li class="social-list">
-              <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
-              <a href="#" class="footer-link" target="_blank">Instagram</a>
-            </li>
-            <li class="social-list">
-              <a class="footer-link" href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/"
-                target="_blank"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
-              <a href="https://www.facebook.com/people/SMAN-1-Baturiti/100022272215221/" class="footer-link"
-                target="_blank">Facebook</a>
-            </li>
-            <li class="social-list">
-              <a class="footer-link" href="https://www.youtube.com/@wartasmerti" target="_blank"><ion-icon
-                  class="social-icon" name="logo-youtube"></ion-icon></a>
-              <a href="https://www.youtube.com/@wartasmerti" class="footer-link" target="_blank">YouTube</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </div>
-
-    <div class="tiny-footer">
-      <div class="container">
-        <div class="row">
-          <p>
-            &copy; <span class="year">2019</span> SMAN 1 Baturiti. All Right
-            Reserved.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
